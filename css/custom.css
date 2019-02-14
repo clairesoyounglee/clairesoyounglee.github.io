@@ -1,0 +1,44 @@
+@charset 'UTF-8';
+
+/* Gilroy Font */
+
+@font-face {font-style:normal; font-weight:normal; font-family:'Gilroy-Light'; src:url('../fonts/gilroy_light/Gilroy-Light.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/gilroy_light/Gilroy-Light.otf')  format('opentype'),
+	url('../fonts/gilroy_light/Gilroy-Light.woff') format('woff'),
+	url('../fonts/gilroy_light/Gilroy-Light.ttf')  format('truetype'),
+	url('../fonts/gilroy_light/Gilroy-Light.svg#Gilroy-Light') format('svg');}
+
+@font-face {font-style:normal; font-weight:normal; font-family:'Gilroy-ExtraBold'; src:url('../fonts/gilroy_extrabold/Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/gilroy_extrabold/Gilroy-ExtraBold.otf')  format('opentype'),
+	url('../fonts/gilroy_extrabold/Gilroy-ExtraBold.woff') format('woff'),
+	url('../fonts/gilroy_extrabold/Gilroy-ExtraBold.ttf')  format('truetype'),
+	url('../fonts/gilroy_extrabold/Gilroy-ExtraBold.svg#Gilroy-ExtraBold') format('svg');}
+
+/* Custom Reset */
+body {font-family:'Gilroy-Light', sans-serif; letter-spacing:0;}
+:lang(ko) {font-family:'Spoqa Han Sans', sans-serif !important;}
+section .link {color:#000; border-bottom:1px solid #000; font-family:'Gilroy-ExtraBold';}
+section .link:hover {color:#1616ff; border-color:#1616ff;}
+.hidden {overflow:hidden; clip:rect(0 0 0 0); position:absolute; width:1px; height:1px; margin:-1px; padding:0; border:0;}
+
+/* Main Page */
+#home .intro {margin-bottom:22px; font-size:36px; line-height:58px;}
+#portfolio h2,
+#portfolio .msg {font-size:26px; line-height:1.1;}
+
+/* Sub Page */
+#single-project .tit {margin:20px 0; font-weight:900; font-size:24px; font-family:'Gilroy-ExtraBold'; line-height:1.5; color:#222;}
+#single-project .txt {margin:10px 0; font-weight:400; font-size:16px; line-height:1.6; color:#777;}
+#single-project .category {overflow:hidden; margin:0; margin:30px 0; padding:0;}
+#single-project .category li {float:left; font-weight:700; font-size:13px; line-height:1.5; color:#999; list-style:none;font-family:'Gilroy-ExtraBold';}
+#single-project .category li:after {margin:0 8px; content:'/';}
+#single-project .category li:last-child:after {display:none;}
+#single-project .link {font-weight:400; font-size:13px;}
+#single-project .link:hover {color:#1616ff;}
+#single-project .link strong {font-family:'Gilroy-ExtraBold';}
+#single-project .thumb {max-width:100%; margin-top:40px;}
+
+/* Device Width > 1680px, Grid Width 1600px */
+@media (min-width: 1680px) {
+    .container {width:1600px;}
+}
