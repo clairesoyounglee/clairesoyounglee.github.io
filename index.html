@@ -1,282 +1,203 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Leesoyoung">
+    <meta name="Keywords" content="검색 관련 키워드들 콤마로 분리해서 작성">
+    <meta name="Description" content="이 포트폴리오에 관한 설명문">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Leesoyoung">
+    <meta property="og:description" content="검색 관련 키워드들 콤마로 분리해서 작성">
+    <meta property="og:image" content="포트폴리오 대표 이미지 경로">
+    <meta property="og:url" content="포트폴리오 웹 경로">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lee So Young</title>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="css/common.css">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135251782-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    <!-- Main css -->
-    <link rel="stylesheet" href="css/style.css">
-    <link href="http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/custom.css">
+  gtag('config', 'UA-135251782-1');
+</script>
+
 
 </head>
 
 <body>
-
-    <!--[if IE]>
-		<script type="text/javascript">
-			 var console = { log: function() {} };
-		</script>
-    <![endif]-->
-
-    <!-- Navigation section  -->
-
-    <div class="navbar navbar-default navbar-static-top" role="navigation">
-        <div class="container">
-            <h1 class="hidden">Soyoung Lee</h1>
-            <div class="navbar-header">
-                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-                </button>
-                <a href="http://www.leesoyoung.co.kr" class="navbar-brand"><i class="fa fa-magnet"></i></a>
-            </div>
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="http://www.leesoyoung.co.kr">Work</a></li>
-                    <li><a href="https://drive.google.com/open?id=1kpZOJNXsbTaicoiDuteveo-bD-CoZnEk">Resume</a></li>
-                    <li><a href="blog.html">Doer</a></li>
-                </ul>
-            </div>
-
-        </div>
+    <!-- 하위 브라우저 접속시 화면 -->
+    <div class="ie8">
+        <img src="images/ico/symbol.png" alt="Leesoyoung">
+        <p>
+            본 사이트는 인터넷 익스플로러9 버전 이상의 최신 브라우저에 최적화되어있습니다.<br>
+            최신 브라우저로 업데이트해주시길 바랍니다.
+        </p>
+        <p>
+            Please update your browser for more security, speed and the best experience on this site.
+        </p>
+        <a href="http://windows.microsoft.com/ko-kr/internet-explorer/download-ie/" target="_blank" title="새창열림">Interet
+            Explorer Update</a>
     </div>
+    <!-- //하위 브라우저 접속시 화면 -->
 
-    <!-- Home Section -->
+    <div class="wrap">
 
-    <section id="home">
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-offset-1 col-md-10 col-sm-12">
-                    <p class="intro">
-                        Hello! I'm So Young Lee,<br>
-                        Product designer and Calligrapher<br>
-                        based in Seoul.
-                    </p>
-                    <p class="intro">
-                        If you want work and play with me,<br>
-                        <a href="mailto:clairesoyoung.lee@gmail.com" class="link">Please contact me.</a>
-                    </p>
-                    <hr>
-                </div>
+        <!-- 헤더 -->
+        <header>
+            <div class="container">
+                <h1>
+                    <a href="/">
+                        <img src="images/ico/symbol.png" alt="Leesoyoung">
+                    </a>
+                </h1>
+                <button class="open mobile" type="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    모바일 메뉴 열기
+                </button>
+
+                <!-- 네비게이션 -->
+                <nav>
+                    <ul>
+                        <li><a href="#">work</a></li>
+                        <li><a href="#">resume</a></li>
+                        <li><a href="#">blog</a></li>
+                    </ul>
+                </nav>
+                <!-- //네비게이션 -->
 
             </div>
-        </div>
-    </section>
+        </header>
+        <!-- //헤더 -->
 
-    <!-- Portfolio Section -->
-
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <a href="single-project.html">
-                        <div class="portfolio-thumb">
-                            <img src="images/portfolio-img1.jpg" class="img-responsive" alt="Portfolio">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-item">
-                                    <h2>Ahnlab</h2>
-                                    <small>UI/UX</small>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <a href="single-project.html">
-                        <div class="portfolio-thumb">
-                            <img src="images/portfolio-img2.jpg" class="img-responsive" alt="Portfolio">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-item">
-                                    <h2>KIA Australian Open</h2>
-                                    <small>Branding, Website</small>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <a href="single-project.html">
-                        <div class="portfolio-thumb">
-                            <img src="images/portfolio-img3.jpg" class="img-responsive" alt="Portfolio">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-item">
-                                    <h2>SK Telecom Be-me</h2>
-                                    <small>Mobile App</small>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <a href="single-project.html">
-                        <div class="portfolio-thumb">
-                            <img src="images/portfolio-img4.jpg" class="img-responsive" alt="Portfolio">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-item">
-                                    <h2>Samsung.com Seasonal Promotion</h2>
-                                    <small>Web Promotion</small>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <a href="single-project.html">
-                        <div class="portfolio-thumb">
-                            <img src="images/portfolio-img5.jpg" class="img-responsive" alt="Portfolio">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-item">
-                                    <h2>Try LG G4</h2>
-                                    <small>UI/UX, Website</small>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <a href="single-project.html">
-                        <div class="portfolio-thumb">
-                            <img src="images/portfolio-img6.jpg" class="img-responsive" alt="Portfolio">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-item">
-                                    <h2>Coway</h2>
-                                    <small>Website</small>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <a href="single-project.html">
-                        <div class="portfolio-thumb">
-                            <img src="images/portfolio-img1.jpg" class="img-responsive" alt="Portfolio">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-item">
-                                    <h2>Samsung.com Holiday Promotion</h2>
-                                    <small>Website</small>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <a href="single-project.html">
-                        <div class="portfolio-thumb">
-                            <img src="images/portfolio-img2.jpg" class="img-responsive" alt="Portfolio">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-item">
-                                    <h2>KIA Mohave</h2>
-                                    <small>Website</small>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!--[9-12]>
-                <div class="col-md-4 col-sm-6">
-                    <a href="single-project.html">
-                        <div class="portfolio-thumb">
-                            <img src="images/portfolio-img3.jpg" class="img-responsive" alt="Portfolio">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-item">
-                                    <h2>Project Name</h2>
-                                    <small>Mobile App</small>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6"> <a href="single-project.html">
-                        <div class="portfolio-thumb"> <img src="images/portfolio-img4.jpg" class="img-responsive" alt="Portfolio">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-item">
-                                    <h2>Project Name</h2>
-                                    <small>Logo Design</small>
-                                </div>
-                            </div>
-                        </div>
-                    </a> </div>
-                <div class="col-md-4 col-sm-6">
-                    <a href="single-project.html">
-                        <div class="portfolio-thumb">
-                            <img src="images/portfolio-img5.jpg" class="img-responsive" alt="Portfolio">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-item">
-                                    <h2>Project Name</h2>
-                                    <small>Social marketing</small>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <a href="single-project.html">
-                        <div class="portfolio-thumb">
-                            <img src="images/portfolio-img6.jpg" class="img-responsive" alt="Portfolio">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-item">
-                                    <h2>Project Name</h2>
-                                    <small>Fyler Design</small>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <![end9-12]-->
-                <!--[moreworks]>
-                <div class="col-md-12 col-sm-12 text-center">
-                    <p class="msg">
-                        if you want to check more my work,
-                        <a href="https://www.dropbox.com/s/vpa3itr6otuczhr/LeeSoYoung_Portfolio.pdf?dl=0" class="link" target="_blank">Get it touch.</a>
-                    </p>
-                </div>
-                <![endmoreworks]-->
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer Section -->
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6">
-                    <div class="footer-copyright">
-                        <p>Copyright. Lee So Young. All Rights Reserved.</p>
+        <!-- 메인 페이지 -->
+        <div class="content main">
+            <section>
+                <div class="container">
+                    <div class="inner">
+                        <h2 class="hidden">인사말</h2>
+                        <p class="greeting_msg">
+                            Hello! I'm So Young Lee,<br>
+                            Product designer and Calligrapher<br>
+                            based in Seoul.
+                        </p>
+                        <p class="greeting_msg">
+                            If you want work and play with me,<br>
+                            <a href="mailto:clairesoyoung.lee@gmail.com">Please contact me.</a>
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-6">
-                    <ul class="social-icon">
-                        <li><a href="#" class="fa fa-facebook"></a></li>
-                        <li><a href="#" class="fa fa-twitter"></a></li>
-                        <li><a href="#" class="fa fa-linkedin"></a></li>
+            </section>
+            <section>
+                <div class="container">
+                    <h2 class="hidden">포트폴리오</h2>
+
+                    <!-- 포트폴리오 -->
+                    <ul class="portfolio">
+                        <li>
+                            <img src="https://picsum.photos/640/360/?random" alt="">
+                            <a href="#">
+                                <div class="overlay">
+                                    <span class="tit">Ahnlab</span>
+                                    <small>UI/UX</small>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <img src="https://picsum.photos/640/360/?random" alt="">
+                            <a href="#">
+                                <div class="overlay">
+                                    <span class="tit">KIA Australian Open</span>
+                                    <small>Branding, Website</small>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <img src="https://picsum.photos/640/360/?random" alt="">
+                            <a href="#">
+                                <div class="overlay">
+                                    <span class="tit">SK Telecom Be-me</span>
+                                    <small>Mobile App</small>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <img src="https://picsum.photos/640/360/?random" alt="">
+                            <a href="#">
+                                <div class="overlay">
+                                    <span class="tit">Samsung.com Seasonal Promotion</span>
+                                    <small>Web Promotion</small>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <img src="https://picsum.photos/640/360/?random" alt="">
+                            <a href="#">
+                                <div class="overlay">
+                                    <span class="tit">Try LG G4</span>
+                                    <small>UI/UX, Website</small>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <img src="https://picsum.photos/640/360/?random" alt="">
+                            <a href="#">
+                                <div class="overlay">
+                                    <span class="tit">Coway</span>
+                                    <small>Website</small>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <img src="https://picsum.photos/640/360/?random" alt="">
+                            <a href="#">
+                                <div class="overlay">
+                                    <span class="tit">Samsung.com Holiday Promotion</span>
+                                    <small>Website</small>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <img src="https://picsum.photos/640/360/?random" alt="">
+                            <a href="#">
+                                <div class="overlay">
+                                    <span class="tit">KIA Mohave</span>
+                                    <small>Website</small>
+                                </div>
+                            </a>
+                        </li>
                     </ul>
+                    <!-- //포트폴리오 -->
+
                 </div>
-            </div>
+            </section>
         </div>
-    </footer>
+        <!-- //메인 페이지 -->
 
-    <!-- SCRIPTS -->
+        <!-- 푸터 -->
+        <footer>
+            <div class="container">
+                <p class="copyright">Copyright. Lee So Young. All Rights Reserved.</p>
+                <ul class="sns">
+                    <li><a class="fa fa-facebook" href="#"></a></li>
+                    <li><a class="fa fa-twitter" href="#"></a></li>
+                    <li><a class="fa fa-linkedin" href="#"></a></li>
+                </ul>
+            </div>
+        </footer>
+        <!-- //푸터 -->
 
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/custom.js"></script>
+    </div>
+
 </body>
 
 </html>
