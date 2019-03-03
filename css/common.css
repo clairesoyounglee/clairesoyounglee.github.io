@@ -11,13 +11,15 @@
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 /* Gilroy Font */
-@font-face {font-style:normal; font-weight:normal; font-family:'Gilroy-Light'; src:url('../fonts/gilroy_light/Gilroy-Light.eot?#iefix') format('embedded-opentype'),
+@font-face {font-style:normal; font-weight:normal; font-family:'Gilroy'; src:
+    url('../fonts/gilroy_light/Gilroy-Light.eot?#iefix') format('embedded-opentype'),
 	url('../fonts/gilroy_light/Gilroy-Light.otf')  format('opentype'),
 	url('../fonts/gilroy_light/Gilroy-Light.woff') format('woff'),
 	url('../fonts/gilroy_light/Gilroy-Light.ttf')  format('truetype'),
 	url('../fonts/gilroy_light/Gilroy-Light.svg#Gilroy-Light') format('svg');}
 
-@font-face {font-style:normal; font-weight:normal; font-family:'Gilroy-ExtraBold'; src:url('../fonts/gilroy_extrabold/Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
+@font-face {font-style:normal; font-weight:900; font-family:'Gilroy'; src:
+    url('../fonts/gilroy_extrabold/Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
 	url('../fonts/gilroy_extrabold/Gilroy-ExtraBold.otf')  format('opentype'),
 	url('../fonts/gilroy_extrabold/Gilroy-ExtraBold.woff') format('woff'),
 	url('../fonts/gilroy_extrabold/Gilroy-ExtraBold.ttf')  format('truetype'),
@@ -30,10 +32,10 @@
 html {font-size:1em; letter-spacing:0;}
 html,body {height:100%;}
 html.fixed,html.fixed body {overflow:hidden;}
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video,button {margin:0; padding:0; border:0; font-size:100%; vertical-align:baseline; font-family:"Gilroy-Light","Apple SD Gothic Neo","Droid Sans",sans-serif; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -o-box-sizing:border-box; -ms-box-sizing:border-box;}
-input[type="text"],input[type="email"],input[type="number"],input[type="submit"],input[type="reset"],input[type="tel"],input[type="password"],input[type="url"],input[type="search"],input[type="file"],button,textarea {-webkit-box-sizing:border-box; box-sizing:border-box; margin:0; padding:0; border:none; border-radius:0; background:none; font-family:"Gilroy-Light","Apple SD Gothic Neo","Droid Sans",sans-serif; font-size:100%; letter-spacing:-0.025em; -webkit-appearance:none; -moz-appearance:none; -ms-appearance:none; -o-appearance:none; -webkit-border-radius:0; -moz-border-radius:0; -o-box-sizing:border-box;}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video,button {margin:0; padding:0; border:0; font-size:100%; vertical-align:baseline; font-family:"Gilroy",'Spoqa Han Sans',"Apple SD Gothic Neo","Droid Sans",sans-serif; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -o-box-sizing:border-box; -ms-box-sizing:border-box;}
+input[type="text"],input[type="email"],input[type="number"],input[type="submit"],input[type="reset"],input[type="tel"],input[type="password"],input[type="url"],input[type="search"],input[type="file"],button,textarea {-webkit-box-sizing:border-box; box-sizing:border-box; margin:0; padding:0; border:none; border-radius:0; background:none; font-family:"Gilroy",'Spoqa Han Sans',"Apple SD Gothic Neo","Droid Sans",sans-serif; font-size:100%; letter-spacing:-0.025em; -webkit-appearance:none; -moz-appearance:none; -ms-appearance:none; -o-appearance:none; -webkit-border-radius:0; -moz-border-radius:0; -o-box-sizing:border-box;}
 input[type="text"]:focus,input[type="password"]:focus,textarea:focus {outline:1px solid #666;}
-[lang="en"] {font-family:'Gilroy-Light';}
+[lang="en"] {font-family:'Gilroy';}
 
 body {position:relative; background:#fff; font-size:16px; line-height:1.8; color:#666; word-wrap:break-word; word-break:keep-all; -webkit-text-size-adjust:none; -moz-text-size-adjust:none;}
 blockquote,q {quotes:none;}
@@ -74,12 +76,6 @@ button span {position:relative;}
 3. 공통 레이아웃
 =========================================================*/
 
-/* 하위브라우저 접근차단 */
-.ie8 {display:none; position:fixed; top:0; left:0; z-index:9999; width:100%; height:100%; padding-top:15%; background:#fff; text-align:center;}
-.ie8 p {margin-top:20px; font-size:16px; line-height:1.5;}
-.ie8 a {display:inline-block; margin-top:30px; padding:0; border-bottom:2px solid #1616ff; font-size:20px; font-weight:700; line-height:1.25em; color:#1616ff;}
-
-
 /* 그리드 */
 .container {position:relative; max-width:1630px; margin:0 auto; padding:0 15px;}
 .container .inner {width:83.33%; margin:0 auto; padding:0 15px;}
@@ -104,13 +100,13 @@ header .open span {position:absolute; left:0; width:20px; height:2px; background
 header .open span:nth-child(1) {top:3px;}
 header .open span:nth-child(2) {top:50%; margin-top:-1px;}
 header .open span:nth-child(3) {bottom:3px;}
-header .open.on span {top:50%; margin-top:-1px; background:#1616ff;}
+header .open.on span {top:50%; margin-top:-1px; background:#333;}
 header .open.on span:nth-child(1) {-webkit-transform:rotate(45deg); transform:rotate(45deg);}
 header .open.on span:nth-child(2) {opacity:0;}
 header .open.on span:nth-child(3) {-webkit-transform:rotate(-45deg); transform:rotate(-45deg);}
 
 @media screen and (max-width:1024px) {
-    header {height:70px;}
+    header {height:auto;}
     header h1 {top:16px;}
     header h1 img {height:37px;}
     header .open {top:25px;}
@@ -137,7 +133,6 @@ nav {position:absolute; top:45px; right:15px; }
 nav ul {display:block; overflow:hidden; margin:0 -18px;}
 nav ul li {float:left; margin:0 18px; line-height:50px;}
 nav ul li a {color:#333; letter-spacing:0.05em; text-transform:capitalize; -webkit-transition:all .5s; transition:all .5s;}
-nav ul li a:hover {font-weight:700;}
 
 @media screen and (max-width:1024px) {
     nav {position:static; padding-top:70px;}
@@ -187,38 +182,44 @@ footer .sns li a:hover {color:#1616ff; -webkit-transform:scale(1.1); transform:s
 .main {padding-top: 40px;}
 .main .greeting_msg {margin-top: 22px; font-size:36px; line-height: 1.63em;color: #000;letter-spacing: 0.2px;}
 .main .greeting_msg:last-child {padding-bottom:10px;}
-.main .greeting_msg a {border-bottom:1px solid #333; font-family:"Gilroy-ExtraBold"; -webkit-transition:color 0.5s, border 0.5s; transition:color 0.5s, border 0.5s;}
+.main .greeting_msg a {border-bottom:1px solid #333; font-weight:900; -webkit-transition:color 0.5s, border 0.5s; transition:color 0.5s, border 0.5s;}
 .main .greeting_msg a:hover {border-color:#1616ff;}
 
 @media screen and (max-width:1024px) {
 	.main .greeting_msg {font-size:26px;}
 }
 
-@media screen and (max-width:599px) {
-	.main .greeting_msg {font-size:16px;}
-}
-
 /*=========================================================
-5. 서브 페이지
 5. 서브 페이지
 =========================================================*/
 
 .sub {padding-top:60px;}
-.sub .project_tit {margin:20px 0; font-family:"Gilroy-ExtraBold"; font-size:24px; line-height:1.5em; color:#222; letter-spacing:0.2px;}
+.sub .project_tit {margin:20px 0; font-weight:900; font-size:24px; line-height:1.5em; color:#222; letter-spacing:0.2px;}
 .sub .info_txt {margin:10px 0; line-height:1.8em; font-weight:300; letter-spacing:0.2px;}
 .sub .category {overflow:hidden; margin:36px 0 25px;}
-.sub .category li {float:left; font-family:"Gilroy-ExtraBold"; font-size:13px; color:#999;}
+.sub .category li {float:left; font-weight:900; font-size:13px; color:#999;}
 .sub .category li:after {margin:0 8px; content:'/';}
 .sub .category li:last-child:after {display:none;}
-.sub .link {border-bottom:1px solid #333; font-family:"Gilroy-ExtraBold"; font-size:13px; -webkit-transition:color .5s, border .5s; transition:color .5s, border .5s; letter-spacing:0.5px;}
+.sub .link {border-bottom:1px solid #333; font-weight:900; font-size:13px; -webkit-transition:color .5s, border .5s; transition:color .5s, border .5s; letter-spacing:0.5px;}
 .sub .link:hover {border-color:#1616ff;}
 .sub .link + small {font-size:13px; letter-spacing:0.5px;}
-.sub .screenshot {font-size:0;}
+.sub .screenshot {font-size:0; margin-top:70px;}
 .sub .screenshot img {margin-top:50px;}
+.sub .screenshot .txt_wrap {margin-top:20px;}
+.sub .screenshot h4 {font-size:20px; color:#333;}
+.sub .screenshot .info_txt {font-size:16px;}
+.sub .screenshot video {display:block; width:100%; max-width:360px; margin:50px auto 0;}
 .sub .portfolio {margin-top:100px;}
 .sub .notice {margin-top:50px; font-size:26px; line-height:1.4em; color:#666; text-align:center;}
 .sub .notice a {color: #1616ff;}
+.sub .project_list {margin-top:50px; text-align:center;}
+.sub .project_list li {display:inline-block; font-size:20px; margin:0 15px;}
+.sub .project_list li a {transition:all 0.5s;}
+.sub .project_list li.on a {color:#1616ff;}
 
-
+@media screen and (max-width:1024px) {
+    .sub .screenshot {width:calc(100% + 30px); margin-left:-15px;}
+    .sub .screenshot .txt_wrap {padding:0 30px;}
+}
 
 
