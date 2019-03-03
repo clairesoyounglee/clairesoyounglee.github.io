@@ -206,14 +206,14 @@ footer .sns li a:hover {color:#1616ff; -webkit-transform:scale(1.1); transform:s
 .sub .screenshot {font-size:0; margin-top:70px;}
 .sub .screenshot img {margin-top:50px;}
 .sub .screenshot .txt_wrap {margin-top:20px;}
-.sub .screenshot h4 {font-size:20px; color:#333;}
+.sub .screenshot h4 {font-size:18px; color:#333;}
 .sub .screenshot .info_txt {font-size:16px;}
 .sub .screenshot video {display:block; width:100%; max-width:360px; margin:50px auto 0;}
 .sub .portfolio {margin-top:100px;}
 .sub .notice {margin-top:50px; font-size:26px; line-height:1.4em; color:#666; text-align:center;}
 .sub .notice a {color: #1616ff;}
-.sub .project_list {margin-top:50px; text-align:center;}
-.sub .project_list li {display:inline-block; font-size:20px; margin:0 15px;}
+.sub .project_list {margin-top:100px; text-align:center;}
+.sub .project_list li {display:inline-block; font-size:22px; margin:0 15px; line-height:44px;}
 .sub .project_list li a {transition:all 0.5s;}
 .sub .project_list li.on a {color:#1616ff;}
 
