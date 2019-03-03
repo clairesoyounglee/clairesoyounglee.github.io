@@ -213,7 +213,9 @@ footer .sns li a:hover {color:#1616ff; -webkit-transform:scale(1.1); transform:s
 .sub .notice {margin-top:50px; font-size:26px; line-height:1.4em; color:#666; text-align:center;}
 .sub .notice a {color: #1616ff;}
 .sub .project_list {margin-top:100px; text-align:center;}
-.sub .project_list li {display:inline-block; font-size:22px; margin:0 15px; line-height:44px;}
+.sub .project_list li {display:inline-block; font-size:18px; line-height:34px;}
+.sub .project_list li:before {content:"/"; display:inline-block; width:30px; line-height:34px; font-size:12px; position:relative; top:-1px;}
+.sub .project_list li:first-child:before {display:none;}
 .sub .project_list li a {transition:all 0.5s;}
 .sub .project_list li.on a {color:#1616ff;}
 
