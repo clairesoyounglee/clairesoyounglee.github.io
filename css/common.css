@@ -167,7 +167,7 @@ footer {padding:32px 0 73px; border-top:1px solid #f0f0f0; color:#000;}
 footer .copyright {font-size:15px; line-height:26px; letter-spacing:0.2px; padding:12px 0;}
 footer .sns {overflow:hidden; position:absolute; top:0; right:15px;}
 footer .sns li {float:left;}
-footer .sns li a {padding:17px 14px 10px; color:#777; -webkit-transition:all .5s; transition:all .5s;}
+footer .sns li a {padding:17px 14px 10px; color:#666; -webkit-transition:all .5s; transition:all .5s;}
 footer .sns li a:hover {color:#1616ff; -webkit-transform:scale(1.1); transform:scale(1.1);}
 
 @media screen and (max-width:599px) {
@@ -195,7 +195,7 @@ footer .sns li a:hover {color:#1616ff; -webkit-transform:scale(1.1); transform:s
 
 .sub {padding-top:60px;}
 .sub .project_tit {margin:20px 0; font-weight:900; font-size:24px; line-height:1.5em; color:#222; letter-spacing:0.2px;}
-.sub .info_txt {margin:10px 0; line-height:1.8em; font-weight:300; letter-spacing:0.2px;}
+.sub .info_txt {margin:20px 0; line-height:1.8em; font-weight:300; letter-spacing:0.2px;}
 .sub .category {overflow:hidden; margin:36px 0 25px;}
 .sub .category li {float:left; font-weight:900; font-size:13px; color:#999;}
 .sub .category li:after {margin:0 8px; content:'/';}
