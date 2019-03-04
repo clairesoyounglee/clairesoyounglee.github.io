@@ -34,14 +34,14 @@ html,body {height:100%;}
 html.fixed,html.fixed body {overflow:hidden;}
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video,button {margin:0; padding:0; border:0; font-size:100%; vertical-align:baseline; font-family:"Gilroy",'Spoqa Han Sans',"Apple SD Gothic Neo","Droid Sans",sans-serif; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -o-box-sizing:border-box; -ms-box-sizing:border-box;}
 input[type="text"],input[type="email"],input[type="number"],input[type="submit"],input[type="reset"],input[type="tel"],input[type="password"],input[type="url"],input[type="search"],input[type="file"],button,textarea {-webkit-box-sizing:border-box; box-sizing:border-box; margin:0; padding:0; border:none; border-radius:0; background:none; font-family:"Gilroy",'Spoqa Han Sans',"Apple SD Gothic Neo","Droid Sans",sans-serif; font-size:100%; letter-spacing:-0.025em; -webkit-appearance:none; -moz-appearance:none; -ms-appearance:none; -o-appearance:none; -webkit-border-radius:0; -moz-border-radius:0; -o-box-sizing:border-box;}
-input[type="text"]:focus,input[type="password"]:focus,textarea:focus {outline:1px solid #666;}
+input[type="text"]:focus,input[type="password"]:focus,textarea:focus {outline:1px solid #222;}
 [lang="en"] {font-family:'Gilroy';}
 
-body {position:relative; background:#fff; font-size:16px; line-height:1.8; color:#666; word-wrap:break-word; word-break:keep-all; -webkit-text-size-adjust:none; -moz-text-size-adjust:none;}
+body {position:relative; background:#fff; font-size:16px; line-height:1.8; color:#222; word-wrap:break-word; word-break:keep-all; -webkit-text-size-adjust:none; -moz-text-size-adjust:none;}
 blockquote,q {quotes:none;}
 table {border-spacing:0; border-collapse:collapse;}
 ul,ol,li {list-style:none;}
-a {color:#333; text-decoration:none;}
+a {color:#222; text-decoration:none;}
 a:hover {color:#1616ff;}
 a:hover,button:hover {cursor:pointer;}
 a:focus {outline:none !important;}
@@ -100,7 +100,7 @@ header .open span {position:absolute; left:0; width:20px; height:2px; background
 header .open span:nth-child(1) {top:3px;}
 header .open span:nth-child(2) {top:50%; margin-top:-1px;}
 header .open span:nth-child(3) {bottom:3px;}
-header .open.on span {top:50%; margin-top:-1px; background:#333;}
+header .open.on span {top:50%; margin-top:-1px; background:#222;}
 header .open.on span:nth-child(1) {-webkit-transform:rotate(45deg); transform:rotate(45deg);}
 header .open.on span:nth-child(2) {opacity:0;}
 header .open.on span:nth-child(3) {-webkit-transform:rotate(-45deg); transform:rotate(-45deg);}
@@ -132,7 +132,7 @@ header .open.on span:nth-child(3) {-webkit-transform:rotate(-45deg); transform:r
 nav {position:absolute; top:45px; right:15px; }
 nav ul {display:block; overflow:hidden; margin:0 -18px;}
 nav ul li {float:left; margin:0 18px; line-height:50px;}
-nav ul li a {color:#333; letter-spacing:0.05em; text-transform:capitalize; -webkit-transition:all .5s; transition:all .5s;}
+nav ul li a {color:#222; letter-spacing:0.05em; text-transform:capitalize; -webkit-transition:all .5s; transition:all .5s;}
 
 @media screen and (max-width:1024px) {
     nav {position:static; padding-top:70px;}
@@ -167,7 +167,7 @@ footer {padding:32px 0 73px; border-top:1px solid #f0f0f0; color:#000;}
 footer .copyright {font-size:15px; line-height:26px; letter-spacing:0.2px; padding:12px 0;}
 footer .sns {overflow:hidden; position:absolute; top:0; right:15px;}
 footer .sns li {float:left;}
-footer .sns li a {padding:17px 14px 10px; color:#666; -webkit-transition:all .5s; transition:all .5s;}
+footer .sns li a {padding:17px 14px 10px; color:#777; -webkit-transition:all .5s; transition:all .5s;}
 footer .sns li a:hover {color:#1616ff; -webkit-transform:scale(1.1); transform:scale(1.1);}
 
 @media screen and (max-width:599px) {
@@ -182,7 +182,7 @@ footer .sns li a:hover {color:#1616ff; -webkit-transform:scale(1.1); transform:s
 .main {padding-top: 40px;}
 .main .greeting_msg {margin-top: 22px; font-size:36px; line-height: 1.63em;color: #000;letter-spacing: 0.2px;}
 .main .greeting_msg:last-child {padding-bottom:10px;}
-.main .greeting_msg a {border-bottom:1px solid #333; font-weight:900; -webkit-transition:color 0.5s, border 0.5s; transition:color 0.5s, border 0.5s;}
+.main .greeting_msg a {border-bottom:1px solid #222; font-weight:900; -webkit-transition:color 0.5s, border 0.5s; transition:color 0.5s, border 0.5s;}
 .main .greeting_msg a:hover {border-color:#1616ff;}
 
 @media screen and (max-width:1024px) {
@@ -200,17 +200,17 @@ footer .sns li a:hover {color:#1616ff; -webkit-transform:scale(1.1); transform:s
 .sub .category li {float:left; font-weight:900; font-size:13px; color:#999;}
 .sub .category li:after {margin:0 8px; content:'/';}
 .sub .category li:last-child:after {display:none;}
-.sub .link {border-bottom:1px solid #333; font-weight:900; font-size:13px; -webkit-transition:color .5s, border .5s; transition:color .5s, border .5s; letter-spacing:0.5px;}
+.sub .link {border-bottom:1px solid #222; font-weight:900; font-size:13px; -webkit-transition:color .5s, border .5s; transition:color .5s, border .5s; letter-spacing:0.5px;}
 .sub .link:hover {border-color:#1616ff;}
 .sub .link + small {font-size:13px; letter-spacing:0.5px;}
 .sub .screenshot {font-size:0; margin-top:70px;}
 .sub .screenshot img {margin-top:50px;}
 .sub .screenshot .txt_wrap {margin-top:20px;}
-.sub .screenshot h4 {font-size:18px; color:#333;}
+.sub .screenshot h4 {font-size:18px; color:#222;}
 .sub .screenshot .info_txt {font-size:16px;}
 .sub .screenshot video {display:block; width:100%; max-width:360px; margin:50px auto 0;}
 .sub .portfolio {margin-top:100px;}
-.sub .notice {margin-top:50px; font-size:26px; line-height:1.4em; color:#666; text-align:center;}
+.sub .notice {margin-top:50px; font-size:26px; line-height:1.4em; color:#222; text-align:center;}
 .sub .notice a {color: #1616ff;}
 .sub .project_list {margin-top:100px; text-align:center;}
 .sub .project_list li {display:inline-block; font-size:18px; line-height:34px;}
