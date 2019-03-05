@@ -5,7 +5,64 @@
 =========================================================*/
 
 /* Spoqa Sans Font */
-@import url('http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
+/**
+ * Copyright (c) 2015 Spoqa, Inc.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining
+ * a copy of this software and associated documentation files (the
+ * "Software"), to deal in the Software without restriction, including
+ * without limitation the rights to use, copy, modify, merge, publish,
+ * distribute, sublicense, and/or sell copies of the Software, and to
+ * permit persons to whom the Software is furnished to do so, subject to
+ * the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be
+ * included in all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+ * LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+ * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+ * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ */
+
+ @font-face {
+    font-family: 'Spoqa Han Sans';
+    font-weight: 700;
+    src: local('Spoqa Han Sans Bold'),
+    url('../fonts/spoca/SpoqaHanSansBold.woff2') format('woff2'),
+    url('../fonts/spoca/SpoqaHanSansBold.woff') format('woff'),
+    url('../fonts/spoca/SpoqaHanSansBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans';
+    font-weight: 400;
+    src: local('Spoqa Han Sans Regular'),
+    url('../fonts/spoca/SpoqaHanSansRegular.woff2') format('woff2'),
+    url('../fonts/spoca/SpoqaHanSansRegular.woff') format('woff'),
+    url('../fonts/spoca/SpoqaHanSansRegular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans';
+    font-weight: 300;
+    src: local('Spoqa Han Sans Light'),
+    url('../fonts/spoca/SpoqaHanSansLight.woff2') format('woff2'),
+    url('../fonts/spoca/SpoqaHanSansLight.woff') format('woff'),
+    url('../fonts/spoca/SpoqaHanSansLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans';
+    font-weight: 100;
+    src: local('Spoqa Han Sans Thin'),
+    url('../fonts/spoca/SpoqaHanSansThin.woff2') format('woff2'),
+    url('../fonts/spoca/SpoqaHanSansThin.woff') format('woff'),
+    url('../fonts/spoca/SpoqaHanSansThin.ttf') format('truetype');
+}
 
 /* Fontawesome */
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
@@ -223,5 +280,3 @@ footer .sns li a:hover {color:#1616ff; -webkit-transform:scale(1.1); transform:s
     .sub .screenshot {width:calc(100% + 30px); margin-left:-15px;}
     .sub .screenshot .txt_wrap {padding:0 30px;}
 }
-
-
