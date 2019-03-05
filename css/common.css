@@ -204,6 +204,7 @@ nav ul li a {color:#222; letter-spacing:0.05em; text-transform:capitalize; -webk
 /* 포트폴리오 */
 .portfolio {overflow:hidden; margin:-15px; margin-top:75px;}
 .portfolio li {float:left; position:relative; width:33.33%; padding:15px; font-size:0;}
+.portfolio li img {width:100%;}
 .portfolio li a {position:absolute; top:15px; left:15px; width:calc(100% - 30px); height:calc(100% - 30px); -webkit-transition:all 0.4s; transition:all 0.4s;}
 .portfolio li a:hover {background:rgba(34,34,34,0.9);}
 .portfolio li a .overlay {position:absolute; top:50%; left:50%; font-size:16px; color:#f0f0f0; text-align:center; transform:translate(-50%, -50%); -webkit-transition:opacity 0.4s; transition:opacity 0.4s; opacity:0;}
