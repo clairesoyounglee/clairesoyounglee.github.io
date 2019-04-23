@@ -253,7 +253,7 @@ footer .sns li a:hover {color:#1616ff; -webkit-transform:scale(1.1); transform:s
 
 .sub {padding-top:60px;}
 .sub .project_tit {margin:20px 0; font-weight:900; font-size:30px; line-height:1.5em; color:#222; letter-spacing:0.4px;}
-.sub .info_txt {margin:0 10; line-height:1.8em; font-weight:400; letter-spacing:0.2px; font-size:17px;}
+.sub .info_txt {margin:0 10px; line-height:1.6em; font-weight:300; letter-spacing:0.2px; font-size:17px;}
 .sub .category {overflow:hidden; margin:36px 0 25px;}
 .sub .category li {float:left; font-weight:900; font-size:13px; color:#999;}
 .sub .category li:after {margin:0 8px; content:'/';}
@@ -261,7 +261,7 @@ footer .sns li a:hover {color:#1616ff; -webkit-transform:scale(1.1); transform:s
 .sub .link {border-bottom:1px solid #222; font-weight:900; font-size:13px; -webkit-transition:color .5s, border .5s; transition:color .5s, border .5s; letter-spacing:0.5px;}
 .sub .link:hover {border-color:#1616ff;}
 .sub .link + small {font-size:13px; letter-spacing:0.5px;}
-.sub .screenshot {font-size:0; margin-top:40px;}
+.sub .screenshot {font-size:0; margin-top:50px;}
 .sub .screenshot img {margin-top:70px; margin-bottom: 10px;}
 .sub .screenshot .txt_wrap {margin-top:20px;}
 .sub .screenshot h4 {font-size:20px; color:#222; font-weight:600;}
@@ -270,8 +270,8 @@ footer .sns li a:hover {color:#1616ff; -webkit-transform:scale(1.1); transform:s
 .sub .portfolio {margin-top:100px;}
 .sub .notice {margin-top:50px; font-size:26px; line-height:1.4em; color:#222; text-align:center;}
 .sub .notice a {color: #1616ff;}
-.sub .project_list {margin-top:100px; text-align:center;}
-.sub .project_list li {display:inline-block; font-size:20px; line-height:34px;}
+.sub .project_list {margin-top:120px; text-align:center;}
+.sub .project_list li {display:inline-block; font-size:20px; line-height:36px;}
 .sub .project_list li:before {content:"/"; display:inline-block; width:30px; line-height:34px; font-size:12px; position:relative; top:-1px;}
 .sub .project_list li:first-child:before {display:none;}
 .sub .project_list li a {transition:all 0.5s;}
