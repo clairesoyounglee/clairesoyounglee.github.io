@@ -253,7 +253,7 @@ footer .sns li a:hover {color:#1616ff; -webkit-transform:scale(1.1); transform:s
 
 .sub {padding-top:60px;}
 .sub .project_tit {margin:20px 0; font-weight:900; font-size:30px; line-height:1.5em; color:#222; letter-spacing:0.4px;}
-.sub .info_txt {line-height:1.6em; font-weight:400; letter-spacing:0.2px; font-size:17px;}
+.sub .info_txt {line-height:1.7em; font-weight:300; letter-spacing:0.2px; font-size:17px;}
 .sub .category {overflow:hidden; margin:36px 0 25px;}
 .sub .category li {float:left; font-weight:900; font-size:13px; color:#999;}
 .sub .category li:after {margin:0 8px; content:'/';}
