@@ -207,7 +207,7 @@ nav ul li a {color:#222; letter-spacing:0.05em; text-transform:capitalize; -webk
 .portfolio li img {width:100%;}
 .portfolio li a {position:absolute; top:15px; left:15px; width:calc(100% - 30px); height:calc(100% - 30px); -webkit-transition:all 0.4s; transition:all 0.4s;}
 .portfolio li a:hover {background:rgba(34,34,34,0.9);}
-.portfolio li a .overlay {position:absolute; top:50%; left:50%; font-size:16px; color:#f0f0f0; text-align:center; transform:translate(-50%, -50%); -webkit-transition:opacity 0.4s; transition:opacity 0.4s; opacity:0;}
+.portfolio li a .overlay {position:absolute; top:50%; left:50%; font-size:16px; color:#f0f0f0; text-align:center; transform:translate(-0%, -0%); -webkit-transition:opacity 0.4s; transition:opacity 0.4s; opacity:0;}
 .portfolio li a:hover .overlay {opacity:1;}
 .portfolio li a .overlay .tit {display:block; margin-top:10px; font-size:26px; line-height:1.5em; letter-spacing:0.3px;}
 .portfolio li a .overlay small {display:block; margin-top:10px; font-size:10px; text-transform:uppercase; letter-spacing:0.05em; color:#f0f0f0; letter-spacing:1px;}
