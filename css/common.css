@@ -253,9 +253,9 @@ footer .sns li a:hover {color:#1616ff; -webkit-transform:scale(1.1); transform:s
 
 .sub {padding-top:60px;}
 .sub .project_tit {margin:20px 0; font-weight:900; font-size:34px; line-height:1.5em; color:#222; letter-spacing:0.4px;}
-.sub .info_txt {margin:20px 0px 60px 0px; line-height:1.8em; font-weight:300; letter-spacing:0.2px; font-size:17px;}
+.sub .info_txt {margin:20px 0px 36px 0px; line-height:1.8em; font-weight:300; letter-spacing:0.2px; font-size:17px;}
 .sub .category {overflow:hidden; margin:-15px 0px 35px 0px}
-.sub .category li {float:left; font-weight:300; font-size:15px; color:#777; letter-spacing:0.4px;}
+.sub .category li {float:left; font-weight:300; font-size:15px; color:#888; letter-spacing:0.4px;}
 .sub .category li:after {margin:0 8px; content:'/';}
 .sub .category li:last-child:after {display:none;}
 .sub .link {border-bottom:1px solid #222; font-weight:900; font-size:13px; -webkit-transition:color .5s, border .5s; transition:color .5s, border .5s; letter-spacing:0.5px;}
@@ -265,7 +265,7 @@ footer .sns li a:hover {color:#1616ff; -webkit-transform:scale(1.1); transform:s
 .sub .screenshot img {margin-top:30px; margin-bottom: 10px;}
 .sub .screenshot .txt_wrap {margin-top:20px;}
 .sub .screenshot h4 {font-size:20px; color:#222; font-weight:600;}
-.sub .screenshot .info_txt {font-size:17px; margin-top:6px;}
+.sub .screenshot .info_txt {font-size:17px; margin-top:6px; margin-bottom: 60px}
 .sub .screenshot video {display:block; width:100%; max-width:360px; margin:50px auto 0;}
 .sub .portfolio {margin-top:100px;}
 .sub .notice {margin-top:50px; font-size:26px; line-height:1.4em; color:#222; text-align:center;}
