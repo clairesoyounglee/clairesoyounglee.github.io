@@ -218,7 +218,7 @@ nav ul li a {color:#222; letter-spacing:0.05em; text-transform:capitalize; -webk
 
 @media screen and (max-width:599px) {
 	.portfolio {width:calc(100% + 30px); margin-left:-15px;}
-	.portfolio li {float:none; width:100%;}
+	.portfolio li {float:none; width:100%; padding:15px 0;}
 }
 
 /* 푸터 */
