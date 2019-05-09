@@ -240,7 +240,7 @@ footer .sns li a:hover {color:#1616ff; -webkit-transform:scale(1.1); transform:s
 =========================================================*/
 
 .main {padding-top: 40px;}
-.main .greeting_msg {margin-top: 22px; font-size:40px; line-height: 1.63em;color: #000;letter-spacing: 0.2px;}
+.main .greeting_msg {margin-top: 22px; font-size:36px; line-height: 1.63em;color: #000;letter-spacing: 0.2px;}
 .main .greeting_msg:last-child {padding-bottom:10px;}
 .main .greeting_msg a {border-bottom:1px solid #222; font-weight:900; -webkit-transition:color 0.5s, border 0.5s; transition:color 0.5s, border 0.5s;}
 .main .greeting_msg a:hover {border-color:#1616ff;}
