@@ -280,8 +280,9 @@ footer .sns li a:hover {color:#1616ff; -webkit-transform:scale(1.1); transform:s
 .sub .project_list li.on a {color:#1616ff;}
 
 @media screen and (max-width:1024px) {
-    .sub .screenshot {width:calc(100% + 30px); margin-left:-15px;}
+    /* .sub .screenshot {width:calc(100% + 30px); margin-left:-15px;} */
     .sub .screenshot .txt_wrap {padding:0 30px;}
+    .sub .container.screenshot {padding:0;}
 }
 
 /*=========================================================
