@@ -265,10 +265,10 @@ footer .sns li a:hover {color:#1616ff; -webkit-transform:scale(1.1); transform:s
 .sub .link + small {font-size:13px; letter-spacing:0.5px;}
 .sub .screenshot {font-size:0; margin-top:50px;}
 .sub .screenshot img {width:100%; margin-top:30px; margin-bottom: 10px;}
-.sub .screenshot .txt_wrap {margin-top:20px;}
-.sub .screenshot h4 {font-size:20px; color:#222; font-weight:600;}
-.sub .screenshot .info_txt {font-size:17px; margin-top:6px; margin-bottom: 60px}
-.sub .screenshot video {display:block; width:100%; max-width:360px; margin:50px auto 0;}
+.sub .txt_wrap {margin-top:50px;}
+.sub h4 {font-size:20px; color:#222; font-weight:600;}
+.sub .info_txt {font-size:17px; margin-top:6px; margin-bottom: 60px}
+.sub video {display:block; width:100%; max-width:360px; margin:50px auto 0;}
 .sub .portfolio {margin-top:100px;}
 .sub .notice {margin-top:50px; font-size:26px; line-height:1.4em; color:#222; text-align:center;}
 .sub .notice a {color: #1616ff;}
@@ -281,7 +281,7 @@ footer .sns li a:hover {color:#1616ff; -webkit-transform:scale(1.1); transform:s
 
 @media screen and (max-width:1024px) {
     /* .sub .screenshot {width:calc(100% + 30px); margin-left:-15px;} */
-    .sub .screenshot .txt_wrap {padding:0 30px;}
+    .sub .txt_wrap {padding:0 30px;}
     .sub .container.screenshot {padding:0;}
 }
 
