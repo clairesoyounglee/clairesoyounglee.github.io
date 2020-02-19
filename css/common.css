@@ -104,7 +104,7 @@ html{font-size:1em;letter-spacing:0}html,body{height:100%}html.fixed,html.fixed 
 
 /* 헤더 */
 header {height:140px; background:#fff;}
-header h1 {position:absolute; top:45px; left:15px;}
+header h1 {position:absolute; top:35px; left:15px;}
 header h1 a {display:block; transform-origin:center bottom;}
 header h1 a:hover {-webkit-animation-name:hello; animation-name:hello; animation-duration:.5s;}
 header h1 img {height:66px;}
@@ -198,7 +198,7 @@ footer .sns li a:hover {color:#1616ff; -webkit-transform:scale(1.1); transform:s
 .main {padding-top:40px;}
 .main .greeting_msg {line-height:1.63em; margin-top:22px; font-family:'Circular'; font-size:36px; color:#000; letter-spacing:.2px;}
 .main .greeting_msg:last-child {padding-bottom:10px;}
-.main .greeting_msg a {border-bottom:1px solid #222; font-weight:900; -webkit-transition:color .5s, border .5s; transition:color .5s, border .5s;}
+.main .greeting_msg a {border-bottom:1px solid #222; font-family:'Circular'; font-weight:900; -webkit-transition:color .5s, border .5s; transition:color .5s, border .5s;}
 .main .greeting_msg a:hover {border-color:#1616ff;}
 
 @media screen and (max-width:1024px) {
@@ -209,10 +209,11 @@ footer .sns li a:hover {color:#1616ff; -webkit-transform:scale(1.1); transform:s
 5. 서브 페이지
 =========================================================*/
 
-.sub .box {padding:30px 0;}
+.sub .box {padding:20px 0;}
 .sub .info .box:first-child {padding-top:0;}
 .sub .project_tit {line-height:1.5em; margin-bottom:5px; font-family:'Circular'; font-size:34px; font-weight:900; color:#222; letter-spacing:.4px;}
 .sub .info_txt {line-height:1.8em; margin:20px 0 60px; font-size:17px; font-weight:300; letter-spacing:.2px;}
+.sub .misc {margin-top:10px;}
 .sub .category {overflow:hidden; margin-bottom:35px;}
 .sub .category li {float:left; font-family:'Circular'; font-size:15px; font-weight:300; color:#888; letter-spacing:.4px;}
 .sub .category li:after {content:'/'; margin:0 8px;}
