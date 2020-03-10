@@ -105,7 +105,7 @@ html{font-size:1em;letter-spacing:0}html,body{height:100%}html.fixed,html.fixed 
 
 /* 그리드 */
 .container {position:relative; max-width:1200px; margin:0 auto; padding:0 30px;}
-/* .container .inner {width:83.33%; margin:0 auto; padding:0 15px;} */
+.container .container {padding:0;}
 
 @media screen and (max-width:1680px) {.container {max-width:1170px;}}
 
@@ -113,20 +113,21 @@ html{font-size:1em;letter-spacing:0}html,body{height:100%}html.fixed,html.fixed 
 	.container .inner {width:100%;}}
 
 /* 헤더 */
-header {height:140px; background:#fff;}
-header h1 {position:absolute; top:35px; left:15px;}
-header h1 a {display:block; transform-origin:center bottom;}
+header {position:fixed; top:0; left:0; z-index:9; width:100%; height:140px; transition:all cubic-bezier(.8,0,.2,1) .3s;}
+header.on {background:#000; height:100%;}
+header h1 {position:absolute; top:40px; left:30px;}
+header h1 a {display:block; font-size:0; transform-origin:center bottom;}
 header h1 a:hover {-webkit-animation-name:hello; animation-name:hello; animation-duration:.5s;}
 header h1 img {height:56px;}
-header .open {position:absolute; top:40px; right:15px; width:20px; height:20px; text-indent:-9999px;}
-header .open span {position:absolute; left:0; width:20px; height:2px; background:#bdc3c7; -webkit-transition:all .5s; transition:all .5s;}
-header .open span:nth-child(1) {top:3px;}
-header .open span:nth-child(2) {top:50%; margin-top:-1px;}
-header .open span:nth-child(3) {bottom:3px;}
-header .open.on span {top:50%; margin-top:-1px; background:#222;}
-header .open.on span:nth-child(1) {-webkit-transform:rotate(45deg); transform:rotate(45deg);}
-header .open.on span:nth-child(2) {opacity:0;}
-header .open.on span:nth-child(3) {-webkit-transform:rotate(-45deg); transform:rotate(-45deg);}
+header .open {position:absolute; top:50px; right:30px; width:36px; height:36px; text-indent:-9999px;}
+header .open span {position:absolute; left:0; width:36px; height:4px; background:#000; -webkit-transition:all .5s; transition:all .5s;}
+header .open span:nth-child(1) {top:4px;}
+header .open span:nth-child(2) {top:50%; margin-top:-2px;}
+header .open span:nth-child(3) {bottom:4px;}
+header.on .open span {top:50%; margin-top:-2px; background:#fff;}
+header.on .open span:nth-child(1) {-webkit-transform:rotate(45deg); transform:rotate(45deg);}
+header.on .open span:nth-child(2) {opacity:0;}
+header.on .open span:nth-child(3) {-webkit-transform:rotate(-45deg); transform:rotate(-45deg);}
 
 @media screen and (max-width:1024px) {
     header {height:auto;}
@@ -152,26 +153,37 @@ header .open.on span:nth-child(3) {-webkit-transform:rotate(-45deg); transform:r
 }
 
 /* 네비게이션 */
-nav {position:absolute; top:45px; right:15px;}
-nav ul {display:block; overflow:hidden; margin:0 -18px;}
-nav ul li {float:left; line-height:50px;margin:0 18px;}
-nav ul li a {font-family:'Metro'; color:#222; letter-spacing:.05em; text-transform:capitalize; -webkit-transition:all .5s; transition:all .5s;}
+nav {padding-top:160px; color:#fff;}
+nav .menu li {visibility:hidden; position:relative; margin-bottom:48px; -webkit-animation-play-state:paused; animation-play-state:paused; opacity:0;}
+nav .menu li:last-child {margin:0;}
+nav .menu li:last-child :before,
+nav .menu li:last-child :after {content:'';}
+header.on nav .menu li {visibility:visible; -webkit-animation:.3s both fadeInLeft; animation:.3s both fadeInLeft; -ms-animation-play-state:running;}
+nav .menu li:nth-child(1) {animation-delay:.5s !important;}
+nav .menu li:nth-child(2) {animation-delay:.6s !important;}
+nav .menu li:nth-child(3) {animation-delay:.7s !important;}
+nav .menu li a {display:inline-block; position:relative; line-height:1.21em; font-family:'Metro'; font-size:64px; font-weight:bold; color:inherit; letter-spacing:0;}
+nav .menu li a:after {content:''; position:absolute; bottom:0; left:0; width:100%; height:6px; background:#fff; transition:all .3s; transform:scaleX(0);}
+nav .menu li a:hover:after {transform:scaleX(1);}
+nav .sns {visibility:hidden; overflow:hidden; margin:0 -20px; margin-top:180px; -webkit-animation-play-state:paused; animation-play-state:paused; opacity:0;}
+header.on nav .sns {visibility:visible; -webkit-animation:.3s both fadeInUp; animation:.3s both fadeInUp; -ms-animation-play-state:running; animation-delay:1s !important;}
+nav .sns li {float:left; padding:0 20px;}
+nav .sns li a {line-height:1.2em; font-family:'Metro'; font-size:30px; color:#fff; letter-spacing:-.2px; transition:color .3s;}
+nav .sns li a:hover {color:#1616ff;}
 
 @media screen and (max-width:1024px) {
-    nav {position:static; padding-top:70px;}
-    nav ul {display:none; margin:0;}
-    nav ul li {float:none; line-height:40px; margin:0; background:#fff;}
-    nav ul li a {display:block; text-align:center;}
+    
+    
 }
 
 /* 컨텐츠 영역 */
 .content {padding-bottom:100px;}
 
 /* 포트폴리오 */
-.portfolio {overflow:hidden; margin:-15px; margin-top:75px;}
-.portfolio li {float:left; position:relative; width:50%; padding:15px; font-size:0;}
+.portfolio {overflow:hidden; margin:-10px; margin-top:90px;}
+.portfolio li {float:left; position:relative; width:50%; padding:10px; font-size:0;}
 .portfolio li img {width:100%;}
-.portfolio li a {position:absolute; top:15px; left:15px; z-index:1; width:calc(100% - 30px); height:calc(100% - 30px); -webkit-transition:all .4s; transition:all .4s;}
+.portfolio li a {position:absolute; top:10px; left:10px; z-index:1; width:calc(100% - 20px); height:calc(100% - 20px); -webkit-transition:all .4s; transition:all .4s;}
 .portfolio li a:hover {background:rgba(0,0,0,1);}
 .portfolio li a .overlay {position:absolute; top:50%; left:50%; font-size:16px; color:#f0f0f0; text-align:center; -webkit-transition:opacity 1s; transition:opacity .4s; transform:translate(-50%, -50%); opacity:.0;}
 .portfolio li a:hover .overlay {opacity:1;}
@@ -189,8 +201,8 @@ nav ul li a {font-family:'Metro'; color:#222; letter-spacing:.05em; text-transfo
 }
 
 /* 푸터 */
-footer {padding:60px 0 121px; font-size:24px; color:#000;}
-footer .footer_wrap	{line-height:1.2em;}
+footer {padding:60px 0 121px; font-size:24px; color:#111;}
+footer .footer_wrap	{overflow:hidden; line-height:1.2em;}
 footer .copyright {float:left; font-family:'Metro';}
 footer .sns {float:right; margin-right:-20px;}
 footer .sns li {float:left; padding:0 20px;}
@@ -206,11 +218,11 @@ footer .sns li a:hover {color:#1616ff;}
 4. 메인 페이지
 =========================================================*/
 
-.main {padding-top:40px; letter-spacing:-.2px;}
-.main .greeting_msg {line-height:1.6em; margin-top:60px; font-family:'Metro'; font-size:48px; font-weight:700; color:#000;}
+.main {padding-top:140px; letter-spacing:-.2px;}
+.main .greeting_msg {line-height:1.6em; margin-top:60px; font-family:'Metro'; font-size:48px; font-weight:700; color:#111;}
 .main .greeting_msg:last-child {padding-bottom:10px;}
 .main .sub_msg {line-height:1.5em; margin-top:40px; font-family:'Metro'; font-size:24px;}
-.main .sub_msg a {border-bottom:1px solid #222; font-family:inherit; -webkit-transition:color .5s, border .5s; transition:color .5s, border .5s;}
+.main .sub_msg a {border-bottom:1px solid #111; font-family:inherit; -webkit-transition:color .5s, border .5s; transition:color .5s, border .5s;}
 .main .sub_msg a:hover {border-color:#1616ff;}
 
 @media screen and (max-width:1024px) {
