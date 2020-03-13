@@ -113,13 +113,13 @@ html{font-size:1em;letter-spacing:0}html,body{height:100%}html.fixed,html.fixed 
 	.container .inner {width:100%;}}
 
 /* 헤더 */
-header {position:fixed; top:0; left:0; z-index:9; width:100%; height:140px; transition:all cubic-bezier(.8,0,.2,1) .3s;}
+header {overflow:hidden; position:fixed; top:0; left:0; z-index:9; width:100%; height:180px; transition:all cubic-bezier(.8,0,.2,1) .3s;}
 header.on {background:#000; height:100%;}
-header h1 {position:absolute; top:40px; left:30px;}
+header h1 {position:absolute; top:84px; left:30px;}
 header h1 a {display:block; font-size:0; transform-origin:center bottom;}
 header h1 a:hover {-webkit-animation-name:hello; animation-name:hello; animation-duration:.5s;}
 header h1 img {height:56px;}
-header .open {position:absolute; top:50px; right:30px; width:36px; height:36px; text-indent:-9999px;}
+header .open {position:absolute; top:94px; right:30px; width:36px; height:36px; text-indent:-9999px;}
 header .open span {position:absolute; left:0; width:36px; height:4px; background:#000; -webkit-transition:all .5s; transition:all .5s;}
 header .open span:nth-child(1) {top:4px;}
 header .open span:nth-child(2) {top:50%; margin-top:-2px;}
@@ -153,7 +153,7 @@ header.on .open span:nth-child(3) {-webkit-transform:rotate(-45deg); transform:r
 }
 
 /* 네비게이션 */
-nav {padding-top:160px; color:#fff;}
+nav {padding-top:240px; color:#fff;}
 nav .menu li {visibility:hidden; position:relative; margin-bottom:48px; -webkit-animation-play-state:paused; animation-play-state:paused; opacity:0;}
 nav .menu li:last-child {margin:0;}
 nav .menu li:last-child :before,
@@ -201,7 +201,7 @@ nav .sns li a:hover {color:#1616ff;}
 }
 
 /* 푸터 */
-footer {padding:60px 0 121px; font-size:24px; color:#111;}
+footer {padding:60px 0 120px; font-size:24px; color:#111;}
 footer .footer_wrap	{overflow:hidden; line-height:1.2em;}
 footer .copyright {float:left; font-family:'Metro';}
 footer .sns {float:right; margin-right:-20px;}
@@ -218,7 +218,7 @@ footer .sns li a:hover {color:#1616ff;}
 4. 메인 페이지
 =========================================================*/
 
-.main {padding-top:140px; letter-spacing:-.2px;}
+.main {padding-top:180px; letter-spacing:-.2px;}
 .main .greeting_msg {line-height:1.6em; margin-top:60px; font-family:'Metro'; font-size:48px; font-weight:700; color:#111;}
 .main .greeting_msg:last-child {padding-bottom:10px;}
 .main .sub_msg {line-height:1.5em; margin-top:40px; font-family:'Metro'; font-size:24px;}
@@ -234,9 +234,11 @@ footer .sns li a:hover {color:#1616ff;}
 =========================================================*/
 
 .sub .box {padding:20px 0;}
+.sub .info {padding-top:240px; color:#111;}
 .sub .info .box:first-child {padding-top:0;}
-.sub .project_tit {line-height:1.5em; margin-bottom:5px; font-family:'Metro'; font-size:34px; font-weight:900; color:#222; letter-spacing:.4px;}
-.sub .info_txt {line-height:1.8em; margin:20px 0 60px; font-size:17px; font-weight:300; letter-spacing:.2px;}
+.sub .project_tit {line-height:1.2em; margin-top:20px; font-family:'Metro'; font-size:52px; font-weight:700; letter-spacing:-.2px;}
+.sub .info_txt {line-height:1.45em; margin:24px 0 120px; font-size:22px; letter-spacing:-.2px;}
+.sub .detail .box:last-child .info_txt {margin-bottom:0;}
 .sub .misc {margin-top:10px;}
 .sub .category {overflow:hidden; margin-bottom:35px;}
 .sub .category li {float:left; font-family:'Metro'; font-size:15px; font-weight:300; color:#888; letter-spacing:.4px;}
@@ -247,17 +249,17 @@ footer .sns li a:hover {color:#1616ff;}
 .sub .link + small {font-family:'Metro'; font-size:13px; letter-spacing:.5px;}
 .sub .screenshot {font-size:0;}
 .sub .screenshot img {width:100%;}
-.sub h4 {font-family:'Metro'; font-size:20px; font-weight:600; color:#222;}
+.sub h4 {line-height:1.2em; font-family:'Metro'; font-size:32px; font-weight:700; color:#111; letter-spacing:-.12px;}
 .sub video {display:block; width:100%; max-width:360px; margin:50px auto 0;}
 .sub .portfolio {margin-top:100px;}
 .sub .notice {line-height:1.4em; margin-top:50px; font-size:26px; color:#222; text-align:center;}
 .sub .notice a {color:#1616ff;}
 .sub .project_list {margin-top:120px; text-align:center;}
-.sub .project_list li {display:inline-block; line-height:40px; font-size:20px;}
-.sub .project_list li:before {content:'/'; display:inline-block; position:relative; top:-1px; width:30px; line-height:34px; font-size:12px;}
-.sub .project_list li:first-child:before {display:none;}
-.sub .project_list li a {font-family:'Metro'; transition:all .5s;;}
-.sub .project_list li.on a {color:#1616ff;}
+.sub .project_list ul {max-width:1000px; margin:0 auto; font-size:0;}
+.sub .project_list li {display:inline-block; line-height:1.2em; margin-top:20px; padding:0 15px; font-size:24px;}
+.sub .project_list li a {font-family:'Metro'; color:#888; transition:all .5s;}
+.sub .project_list li a:hover {color:#1616ff;}
+.sub .project_list li.on a {font-weight:700; color:#000;}
 
 @media screen and (max-width:1024px) {
     /* .sub .screenshot {width:calc(100% + 30px); margin-left:-15px;} */
