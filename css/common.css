@@ -154,7 +154,8 @@ nav .menu li:nth-child(3) {animation-delay:.7s !important;}
 nav .menu li a {display:inline-block; position:relative; line-height:1.21em; font-family:'sofia-pro'; font-size:64px; font-weight:bold; color:inherit; letter-spacing:0;}
 nav .menu li a:after {content:''; position:absolute; bottom:0; left:0; width:100%; height:6px; background:#fff; transition:all .3s; transform:scaleX(0);}
 nav .menu li a:hover:after {transform:scaleX(1);}
-nav .sns {visibility:hidden; overflow:hidden; margin:0 -20px; margin-top:180px; -webkit-animation-play-state:paused; animation-play-state:paused; opacity:0;}
+nav .sns {visibility:hidden; margin:0 -20px; margin-top:180px; -webkit-animation-play-state:paused; animation-play-state:paused; opacity:0;}
+nav .sns:after {content:""; display:block; clear:both;}
 header.on nav .sns {visibility:visible; -webkit-animation:.3s both fadeInUp; animation:.3s both fadeInUp; -ms-animation-play-state:running; animation-delay:1s !important;}
 nav .sns li {float:left; padding:0 20px;}
 nav .sns li a {position:relative; line-height:1.2em; font-family:'sofia-pro'; font-size:30px; color:#fff; letter-spacing:-.2px; transition:color .3s;}
@@ -212,7 +213,8 @@ nav .sns li a:hover:before {transform:scaleX(1);}
 
 /* 푸터 */
 footer {padding:60px 0 120px; font-size:24px; color:#111;}
-footer .footer_wrap	{overflow:hidden; line-height:1.2em;}
+footer .footer_wrap	{line-height:1.2em;}
+footer .footer_wrap:after {content:""; display:block; clear:both;}
 footer .copyright {float:left; font-family:'sofia-pro';}
 footer .sns {float:right; margin-right:-20px;}
 footer .sns li {float:left; padding:0 20px;}
