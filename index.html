@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -37,32 +37,18 @@
         <header>
             <div class="container">
                 <h1>
-                    <a href="index.html">
+                    <a href="index.html" data-animation>
                         <img src="images/ico/symbol.png" alt="Lee So Young">
                     </a>
                 </h1>
-                <button class="open" type="button">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    메뉴 열기
-                </button>
 
                 <!-- 네비게이션 -->
                 <nav>
-                    <div class="container">
-                        <ul class="menu">
-                            <li><a href="index.html">Work</a></li>
-                            <li><a href="side.html">Side</a></li>
-                            <li><a href="https://goo.gl/nGpk9A" target="_blank">Resume</a></li>
-                        </ul>
-                        <ul class="sns">
-                            <li><a href="mailto:clairesoyoung.lee@gmail.com" target="_blank">Mail</a></li>
-                            <li><a href="https://www.linkedin.com/in/clairesylee" target="_blank">Linkedin</a></li>
-                            <li><a href="https://www.pinterest.co.kr/clairesoyounglee/" target="_blank">Brunch</a></li>
-                            <li><a href="https://www.pinterest.co.kr/clairesoyounglee/" target="_blank">Pinterest</a></li>
-                        </ul>
-                    </div>
+                    <ul class="menu">
+                        <li><a href="index.html" data-border>Work</a></li>
+                        <li><a href="side.html" data-border>Side</a></li>
+                        <li><a href="https://goo.gl/nGpk9A" target="_blank" data-border>Resume</a></li>
+                    </ul>
                 </nav>
                 <!-- //네비게이션 -->
 
@@ -81,10 +67,6 @@
                             UI/UX designer and Calligrapher<br>
                             based in Seoul, Korea.
                         </p>
-                        <p class="sub_msg" data-animation="fadeInUp" data-delay="2">
-                            I like to meet new experiences.<br>
-                            So, feel free <a href="mailto:clairesoyoung.lee@gmail.com"><strong>Say Hello!</strong></a>
-                        </p>
                     </div>
                 </div>
             </section>
@@ -94,57 +76,69 @@
 
                     <!-- 포트폴리오 -->
                     <ul class="portfolio">
-                        <li data-animation="fadeInUp" data-delay="0">
-                            <img src="images/thumbnails/tn_shoppingnttvapp.jpg" alt="">
+                        <li data-animation="fadeInUp" data-delay="2">
                             <a href="page/shoppingnttvapp.html">
+                                <img src="images/thumbnails/tn_shoppingnttvapp.jpg" alt="">
                                 <div class="overlay">
-                                    <span class="tit">Shopping&T TV App</span>
-                                    <small>UI/UX</small>
+                                    <div class="txt_wrap">
+                                        <span class="tit">Shopping&T TV App</span>
+                                        <small>UI/UX</small>
+                                    </div>
                                 </div>
                             </a>
                         </li>
-                        <li data-animation="fadeInUp" data-delay="1">
-                            <img src="images/thumbnails/tn_ahnlab.jpg" alt="">
+                        <li data-animation="fadeInUp" data-delay="3">
                             <a href="page/ahnlab.html">
+                                <img src="images/thumbnails/tn_ahnlab.jpg" alt="">
                                 <div class="overlay">
-                                    <span class="tit">Ahnlab</span>
-                                    <small>UI/UX</small>
+                                    <div class="txt_wrap">
+                                        <span class="tit">Ahnlab</span>
+                                        <small>UI/UX</small>
+                                    </div>
                                 </div>
                             </a>
                         </li>
-                        <li data-animation="fadeInUp" data-delay="0">
-                            <img src="images/thumbnails/tn_kiaao.jpg" alt="">
+                        <li data-animation="fadeInUp" data-delay="2">
                             <a href="page/kiaao.html">
+                                <img src="images/thumbnails/tn_kiaao.jpg" alt="">
                                 <div class="overlay">
-                                    <span class="tit">KIA Australian Open</span>
-                                    <small>Branding, Website</small>
+                                    <div class="txt_wrap">
+                                        <span class="tit">KIA Australian Open</span>
+                                        <small>Branding, Website</small>
+                                    </div>
                                 </div>
                             </a>
                         </li>
-                        <li data-animation="fadeInUp" data-delay="1">
-                            <img src="images/thumbnails/tn_skbeme.jpg" alt="">
+                        <li data-animation="fadeInUp" data-delay="3">
                             <a href="page/skbeme.html">
+                                <img src="images/thumbnails/tn_skbeme.jpg" alt="">
                                 <div class="overlay">
-                                    <span class="tit">SK Telecom Be-me</span>
-                                    <small>Mobile App</small>
+                                    <div class="txt_wrap">
+                                        <span class="tit">SK Telecom Be-me</span>
+                                        <small>Mobile App</small>
+                                    </div>
                                 </div>
                             </a>
                         </li>
-                        <li data-animation="fadeInUp" data-delay="0">
-                            <img src="images/thumbnails/tn_skmoment.jpg" alt="">
+                        <li data-animation="fadeInUp" data-delay="2">
                             <a href="page/skmoment.html">
+                                <img src="images/thumbnails/tn_skmoment.jpg" alt="">
                                 <div class="overlay">
-                                    <span class="tit">SK Planet Momen.t</span>
-                                    <small>Mobile App Service</small>
+                                    <div class="txt_wrap">
+                                        <span class="tit">SK Planet Momen.t</span>
+                                        <small>Mobile App Service</small>
+                                    </div>
                                 </div>
                             </a>
                         </li>
-                        <li data-animation="fadeInUp" data-delay="1">
-                            <img src="images/thumbnails/tn_samsungseasonal.jpg" alt="">
+                        <li data-animation="fadeInUp" data-delay="3">
                             <a href="page/samsungseasonal.html">
+                                <img src="images/thumbnails/tn_samsungseasonal.jpg" alt="">
                                 <div class="overlay">
-                                    <span class="tit">Samsung.com Seasonal Promotion</span>
-                                    <small>Web Promotion</small>
+                                    <div class="txt_wrap">
+                                        <span class="tit">Samsung.com Seasonal Promotion</span>
+                                        <small>Web Promotion</small>
+                                    </div>
                                 </div>
                             </a>
                         </li>
@@ -162,10 +156,12 @@
                 <div class="footer_wrap">
                     <p class="copyright">© Lee Soyoung</p>
                     <ul class="sns">
-                        <li><a href="mailto:clairesoyoung.lee@gmail.com" target="_blank">Mail</a></li>
-                        <li><a href="https://www.linkedin.com/in/clairesylee" target="_blank">Linkedin</a></li>
-                        <li><a href="https://www.pinterest.co.kr/clairesoyounglee/" target="_blank">Brunch</a></li>
-                        <li><a href="https://www.pinterest.co.kr/clairesoyounglee/" target="_blank">Pinterest</a></li>
+                        <li><a href="mailto:clairesoyoung.lee@gmail.com" target="_blank" data-border>Mail</a></li>
+                        <li><a href="https://www.linkedin.com/in/clairesylee" target="_blank" data-border>Linkedin</a>
+                        </li>
+                        <li><a href="#" target="_blank" data-border>Writings</a></li>
+                        <li><a href="https://www.pinterest.co.kr/clairesoyounglee/" target="_blank"
+                                data-border>Pinterest</a></li>
                     </ul>
                 </div>
             </div>
