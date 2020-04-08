@@ -65,6 +65,8 @@
 					- screenshot : 스크린샷이 들어가는 영역
 					- txt : 텍스트가 들어가는 영역
 					- container : 1140px의 그리드에 들어가는 영역
+					- data-animation="fadeInUp" : 위로 슥 올라오는 이펙트
+					- data-delay="1" : 0.1초 후 이펙트 효과 동작
 				-->
 
 				<!-- 개요 -->
@@ -79,7 +81,7 @@
 						<!-- 프로젝트 설명 -->
 						<div data-animation="fadeInUp" data-delay="0">
 							<h2 class="project_tit">Lorem Ipsum</h2>
-							<p class="info_txt">
+							<p class="info_txt" lang="ko">
 								모든 국민은 법 앞에 평등하다. 누구든지 성별·종교 또는 사회적 신분에 의하여 정치적·경제적·사회적·문화적 생활의 모든 영역에 있어서 차별을 받지
 								아니한다.
 								국회는 헌법개정안이 공고된 날로부터 60일 이내에 의결하여야 하며, 국회의 의결은 재적의원 3분의 2 이상의 찬성을 얻어야 한다. 국회의원과 정부는
@@ -121,7 +123,7 @@
 
 					<div class="box txt container" data-animation="fadeInUp" data-delay="0">
 						<h3>Lorem Ipsum</h3>
-						<p class="info_txt">
+						<p class="info_txt" lang="ko">
 							국가안전보장회의는 대통령이 주재한다. 위원은 탄핵 또는 금고 이상의 형의 선고에 의하지 아니하고는 파면되지 아니한다. 혼인과 가족생활은 개인의 존엄과 양성의
 							평등을 기초로 성립되고 유지되어야 하며, 국가는 이를 보장한다.
 
@@ -132,28 +134,32 @@
 						</p>
 					</div>
 
-					<div class="box txt container" data-animation="fadeInUp" data-delay="0">
+					<div class="box txt container">
 
 						<!-- 다단 영역, column 수만큼 단 개수 증가 -->
 						<div class="column_wrap">
-							<div class="column">
+
+							<div class="column" data-animation="fadeInUp" data-delay="1">
 								<h3>Lorem Ipsum</h3>
 								<p class="info_txt" lang="ko">
 									국가안전보장회의는 대통령이 주재한다.
 								</p>
 							</div>
-							<div class="column">
+
+							<div class="column" data-animation="fadeInUp" data-delay="3">
 								<h3>Lorem Ipsum</h3>
 								<p class="info_txt" lang="ko">
 									외국인은 국제법과 조약이 정하는 바에 의하여 그 지위가 보장된다.
 								</p>
 							</div>
-							<div class="column">
+
+							<div class="column" data-animation="fadeInUp" data-delay="5">
 								<h3>Lorem Ipsum</h3>
 								<p class="info_txt" lang="ko">
 									감사위원은 원장의 제청으로 대통령이 임명하고, 그 임기는 4년으로 하며, 1차에 한하여 중임할 수 있다.
 								</p>
 							</div>
+							
 						</div>
 					</div>
 
