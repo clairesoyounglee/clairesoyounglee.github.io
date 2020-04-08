@@ -5,7 +5,35 @@
 =========================================================*/
 
 /* NotoSans */
-@import url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
+@font-face {
+	font-family:'Noto Sans KR'; 
+	src:
+		url('../fonts/notosans/notokr_regular.eot') format('embedded-opentype'), 
+		url('../fonts/notosans/notokr_regular.woff2') format('woff2'), 
+		url('../fonts/notosans/notokr_regular.woff') format('woff'); 
+	font-weight:normal; 
+	font-style:normal;
+}
+
+@font-face {
+	font-family:'Noto Sans KR'; 
+	src:
+		url('../fonts/notosans/notokr_medium.eot') format('embedded-opentype'), 
+		url('../fonts/notosans/notokr_medium.woff2') format('woff2'), 
+		url('../fonts/notosans/notokr_medium.woff') format('woff'); 
+	font-weight:500; 
+	font-style:normal;
+}
+
+@font-face {
+	font-family:'Noto Sans KR'; 
+	src:
+		url('../fonts/notosans/notokr_bold.eot') format('embedded-opentype'), 
+		url('../fonts/notosans/notokr_bold.woff2') format('woff2'), 
+		url('../fonts/notosans/notokr_bold.woff') format('woff'); 
+	font-weight:700; 
+	font-style:normal;
+}
 
 /* Fontawesome */
 @import url('//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
@@ -183,7 +211,7 @@ footer .sns li {float:left; padding:0 15px;}
 /* 공통 */
 .sub .screenshot img {display:block; width:100%;}
 .sub .txt {max-width:960px; padding-bottom:120px;}
-.sub .info_txt {line-height:1.65em; font-size:17px; font-weight:300;}
+.sub .info_txt {font-size:16px; font-weight:400;}
 
 /* 개요 */
 .sub .info .box {padding-top:60px;}
