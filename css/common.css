@@ -215,7 +215,7 @@ footer .sns li {float:left; padding:0 15px;}
 
 /* 개요 */
 .sub .info .box {padding-top:60px;}
-.sub .project_tit {line-height:.95em; margin-bottom:20px; font-size:36px; font-weight:600; letter-spacing:-.14px;}
+.sub .project_tit {line-height:.95em; margin-bottom:20px; font-size:36px; font-weight:600;}
 .sub .project_info {display:table; width:100%; margin:0 -20px; margin-top:60px; table-layout:fixed; font-size:16px;}
 .sub .project_info > div {display:table-cell; padding:0 20px;}
 .sub .project_info > div:last-child {padding-right:0;}
