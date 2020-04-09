@@ -123,7 +123,7 @@ header h1 img {height:48px;}
 nav {position:absolute; top:110px; right:30px;}
 nav ul {margin-right:-20px;}
 nav ul li {float:left; padding:10px 20px;}
-nav ul li a {display:block; line-height:1.4em; font-size:18px;}
+nav ul li a {display:block; line-height:1.6em; font-size:18px;}
 
 @media (max-width:1024px) {
 	nav {top:54px;}
