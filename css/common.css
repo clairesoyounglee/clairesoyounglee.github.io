@@ -98,10 +98,10 @@ header h1 img {height:48px;}
 	header .open span:nth-child(1) {top:0; transform-origin:left top;}
 	header .open span:nth-child(2) {top:50%; width:100% !important; margin-top:-2px;}
 	header .open span:nth-child(3) {bottom:0; transform-origin:left bottom;}
-	header.on .open span {width:130%; background:#fff;}
-	header.on .open span:nth-child(1) {transform:rotate(45deg);}
+	header.on .open span {width:125%; background:#fff;}
+	header.on .open span:nth-child(1) {left:2px; transform:rotate(45deg);}
 	header.on .open span:nth-child(2) {opacity:0;}
-	header.on .open span:nth-child(3) {transform:rotate(-45deg);}
+	header.on .open span:nth-child(3) {left:2px; transform:rotate(-45deg);}
 }
 
 @-webkit-keyframes hello {
