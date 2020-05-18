@@ -2,7 +2,7 @@ $(function () {
 
     /******************** 네비게이션 제어 ********************/
 
-    $('header .open').on('click', function(){
+    $('header .open').on('click', function () {
         $('header').toggleClass('on');
     });
 
@@ -39,6 +39,21 @@ $(function () {
                 });
             if (scroll > $(this).offset().top - start_point)
                 $(this).removeClass('wait-animation');
+
+            //TOP 버튼 제어
+            (scroll === 0) ? top_btn.removeClass('on') : top_btn.addClass('on');
+
+            top_btn.find('button').on('click', function () {
+                if (top_btn_flag) return false;
+                top_btn_flag = 1;
+                $('html, body').animate({
+                    scrollTop: 0
+                }, function () {
+                    top_btn_flag = 0;
+                    top_btn.removeClass('on');
+                });
+                return false;
+            });
         });
     });
 });

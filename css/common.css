@@ -89,7 +89,7 @@ header h1 a:hover {animation:hello .5s;}
 header h1 img {height:48px;}
 
 @media (max-width:1024px) {
-	header {position:fixed; top:0; left:0; z-index:1; width:100%; height:87px;}
+	header {position:fixed; top:0; left:0; z-index:1; width:100%; height:120px; background:#fff;}
 	header.on {height:100vh;}
 	header h1 {top:50px; left:24px;}
 	header h1 img {height:37px;}
@@ -134,12 +134,14 @@ nav .menu li a {display:block; line-height:1.6em; font-size:18px;}
 	nav .menu li {float:none; padding:10px 0;}
 	nav .menu li a {display:inline-block; line-height:1em; font-size:40px; font-weight:600; color:#fff; transition:all .3s; transform:translateX(-100%); opacity:0;}
 	header.on nav .menu li a {opacity:1; transform:translateX(0);}
+	header.on nav .menu li a:before {bottom:-8px; height:4px; background:#fff;}
 	header.on nav .menu li:nth-child(1) a {transition-delay:.4s;}
 	header.on nav .menu li:nth-child(2) a {transition-delay:.5s;}
 	header.on nav .menu li:nth-child(3) a {transition-delay:.6s;}
 	nav .misc {position:absolute; bottom:40px; padding:0 24px;}
 	nav .sns li {line-height:1.5em; padding:0.25em 0; font-size:16px;}
 	nav .sns li a {color:#fff;}
+	nav .sns li a:before {background:#fff;}
 	nav .copyright {margin-top:20px; color:#888; font-size:14px;}
 	nav .copyright a {color:inherit;}
 }
@@ -206,6 +208,15 @@ footer .copyright a:before {background:#888;}
 	footer .footer_wrap {font-size:13px;}
 }
 
+/* TOP 버튼 */
+.move_top {visibility:hidden; position:fixed; right:30px; bottom:30px; z-index:7; -webkit-transition:all 0.3s; transition:all 0.3s; opacity:0;}
+.move_top.on {visibility:visible; bottom:40px; opacity:1;}
+.move_top button {position:relative; width:45px; height:24px; background:#fff; line-height:1; text-align:center; text-indent:-9999px; -webkit-transition:all 0.3s; transition:all 0.3s;}
+.move_top button:before,
+.move_top button:after {position:absolute; content:""; bottom:0; width:74%; height:2px; background:#999;}
+.move_top button:before {transform:rotate(-45deg); left:0; transform-origin:left bottom;}
+.move_top button:after {transform:rotate(45deg); right:0; transform-origin:right bottom;}
+
 /*=========================================================
 4. 메인 페이지
 =========================================================*/
@@ -217,11 +228,18 @@ footer .copyright a:before {background:#888;}
 .main .greeting_txt p:last-child {margin-bottom:25px;}
 .main .greeting_txt p a {color:#00e;}
 .main .greeting_txt p a:before {background:#00e;}
+.main .extra {line-height:1.63em; margin-top:110px; font-size:16px;}
+.main .extra > div {margin-top:30px;}
+.main .extra > div:first-child {margin-top:0;}
+.main .extra dt {margin-bottom:10px; font-weight:600; color:#111;}
+.main .extra dd {position:relative; padding-left:.5em;}
+.main .extra dd:before {content:''; position:absolute; top:13px; left:0; width:4px; height:1px; background:#111;}
 
 @media (max-width:1024px) {
 	.main {padding-top:111px;}
 	.main .greeting_msg {line-height:1.5em; font-size:28px; letter-spacing:-.0075em;}
 	.main .greeting_txt p {margin-bottom:40px;}
+	.main .extra {margin-top:80px;}
 }
 
 @media (max-width:599px) {
