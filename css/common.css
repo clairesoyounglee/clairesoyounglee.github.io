@@ -211,7 +211,7 @@ footer .copyright a:before {background:#888;}
 /* TOP 버튼 */
 .move_top {visibility:hidden; position:fixed; right:30px; bottom:30px; z-index:7; -webkit-transition:all 0.3s; transition:all 0.3s; opacity:0;}
 .move_top.on {visibility:visible; bottom:40px; opacity:1;}
-.move_top button {position:relative; width:45px; height:24px; background:#fff; line-height:1; text-align:center; text-indent:-9999px; -webkit-transition:all 0.3s; transition:all 0.3s;}
+.move_top button {position:relative; width:45px; height:24px; line-height:1; text-align:center; text-indent:-9999px; -webkit-transition:all 0.3s; transition:all 0.3s;}
 .move_top button:before,
 .move_top button:after {position:absolute; content:""; bottom:0; width:74%; height:2px; background:#999;}
 .move_top button:before {transform:rotate(-45deg); left:0; transform-origin:left bottom;}
