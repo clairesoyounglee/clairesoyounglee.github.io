@@ -163,19 +163,22 @@ nav .menu li a {display:block; line-height:1.6em; font-size:18px;}
 .portfolio li {float:left; position:relative; width:50%; padding:10px; font-size:0;}
 .portfolio li img {width:100%;}
 .portfolio li a {display:block; overflow:hidden; position:relative; border-radius:10px; font-size:0;}
-.portfolio li .overlay {display:table; position:absolute; top:0; left:0; width:100%; height:100%; background:#000; text-align:center; transition:all .3s; opacity:0;}
+/* .portfolio li .overlay {display:table; position:absolute; top:0; left:0; width:100%; height:100%; background:#000; text-align:center; transition:all .3s; opacity:0;}
 .portfolio li a:hover .overlay {opacity:1;}
 .portfolio li .txt_wrap {display:table-cell; color:#f0f0f0; vertical-align:middle;}
 .portfolio li .txt_wrap .tit {display:block; line-height:1.2em; font-size:26px;}
-.portfolio li .txt_wrap small {display:block; line-height:1.5em; margin-top:10px; font-size:10px; text-transform:uppercase;}
+.portfolio li .txt_wrap small {display:block; line-height:1.5em; margin-top:10px; font-size:10px; text-transform:uppercase;} */
+.portfolio li .txt_wrap {position:absolute; bottom:55px; left:0; width:100%; padding:0 50px; font-weight:500; color:#00e; text-align:left;}
+.portfolio li .txt_wrap .tit {display:block; line-height:1.5em; font-size:28px;}
+.portfolio li .txt_wrap small {display:block; line-height:1.5em; margin-top:5px; font-size:16px; text-transform:capitalize;}
 
 @media (max-width:1024px) {
 	.portfolio {margin:-12px; margin-top:50px;}
 	.portfolio li {padding:12px;}
-	.portfolio li .overlay {display:block; background:none; opacity:1;}
-	.portfolio li .txt_wrap {display:block; position:absolute; bottom:24px; left:0; width:100%; padding:0 24px; color:#00e; text-align:left;}
+	.portfolio li .txt_wrap {bottom:24px; padding:0 24px;}
 	.portfolio li .txt_wrap .tit {font-size:20px;}
-	.portfolio li .txt_wrap small {margin-top:5px; font-size:13px; text-transform:capitalize;}
+	.portfolio li .txt_wrap small {font-size:13px;}
+	
 }
 
 @media (max-width:599px) {
