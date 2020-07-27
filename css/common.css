@@ -158,6 +158,24 @@ nav .menu li a {display:block; line-height:1.6em; font-size:18px;}
 	.content {padding-bottom:70px;}
 }
 
+/* 목록형 리스트 */
+/* * + [data-list] {margin-top:5px;} */
+[data-list] {font-size:16px; text-indent:0;}
+[data-list] > li {position:relative; line-height:1.8em; padding-left:10px; font-weight:400; text-align:left;}
+[data-list] > li:before {content:''; position:absolute; left:0;}
+[data-list].type1 > li:before {top:.8em; width:4px; height:1px; background:#333;}
+[data-list].type2 > li:before {top:.8em; width:4px; height:4px; border-radius:50%; background:#333;}
+[data-list].type3 > li {padding-left:1em; text-indent:-1em;}
+[data-list] [data-list] {margin:5px 0 10px;}
+
+@media (max-width:1024px) {
+	[data-list] {font-size:14px;}
+}
+
+@media (max-width:599px) {
+	[data-list] {font-size:12px;}
+}
+
 /* 포트폴리오 */
 .portfolio {overflow:hidden; margin:-10px; margin-top:84px;}
 .portfolio li {float:left; position:relative; width:50%; padding:10px; font-size:0;}
@@ -256,6 +274,7 @@ footer .copyright a:before {background:#888;}
 
 /* 공통 */
 .sub .screenshot img {display:block; width:100%;}
+.sub .screenshot .cmt {margin-top:15px; font-size:12px; text-align:center;}
 .sub .txt {max-width:960px; padding-bottom:120px;}
 .sub .info_txt {font-size:16px; font-weight:350;}
 
@@ -275,10 +294,17 @@ footer .copyright a:before {background:#888;}
 
 /* 상세 */
 .sub h3 {line-height:.95em; margin-bottom:29px; font-size:24px; font-weight:600;}
+.sub h4 {margin-bottom:15px; font-size:18px; font-weight:600;}
 .sub .detail .txt {padding-top:40px;}
+.sub .detail .box .info_tit {display:block;}
 .sub .detail .box:last-child .info_txt {margin-bottom:0;}
+.sub .detail .box .inner:not(:first-of-type) {margin-top:30px;}
+.sub .detail .slider {overflow:hidden; height:500px; font-size:0;}
+.sub .detail .slider .slide {width:1800px !important; height:500px; background:url(https://via.placeholder.com/1800x500); background-size:cover; background-position:center;}
 .sub .misc {margin-top:10px;}
-.sub .column_wrap {display:table; width:100%; margin:0 -20px; table-layout:fixed;}
+.sub .info_txt + .info_txt {margin-top:1em;}
+.sub .column_wrap {display:table; width:calc(100% + 40px); margin-left:-20px; table-layout:fixed;}
+.sub .info_txt + .column_wrap {margin-top:30px;}
 .sub .column_wrap .column {display:table-cell; padding:0 20px;}
 .sub video {display:block; width:100%; max-width:360px; margin:50px auto 0;}
 
@@ -293,26 +319,32 @@ footer .copyright a:before {background:#888;}
 
 @media (max-width:1024px) {
 	.sub .txt {padding-bottom:60px;}
+	.sub .info_tit {font-size:16px;}
 	.sub .info_txt {font-size:14px;}
 	.sub .info .box {padding-top:30px;}
 	.sub .project_tit {font-size:26px;}
 	.sub .project_info {margin-top:30px;}
 	.sub .project_info > div {float:none; width:100%; margin-bottom:20px;}
 	.sub h3 {margin-bottom:15px; font-size:20px;}
+	.sub h4 {font-size:18px;}
 	.sub .detail .txt {padding-top:30px;}
-	.sub .column_wrap {display:block; margin:0;}
+	.sub .column_wrap {display:block; margin:0; width:100%;}
 	.sub .column_wrap .column {display:block; margin-bottom:30px; padding:0;}
 	.sub .project_list li {line-height:2em; margin:0; font-size:16px;}
+	.sub .detail .slider {height:250px;}
+	.sub .detail .slider .slide {width:900px !important; height:250px;}
 }
 
 @media (max-width:599px) {
 	.sub .txt {padding-bottom:40px;}
+	.sub .info_tit {font-size:14px;}
 	.sub .info_txt {font-size:12px;}
 	.sub .info .box {padding-top:20px;}
 	.sub .project_tit {font-size:22px;}
 	.sub .project_info {font-size:14px;}
 	.sub .project_info dt {margin-bottom:5px;}
 	.sub h3 {font-size:18px;}
+	.sub h4 {font-size:16px;}
 	.sub .project_list li {line-height:1.8em; margin:0; padding:0 10px; font-size:14px;}
 }
 
