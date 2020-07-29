@@ -186,14 +186,20 @@ nav .menu li a {display:block; line-height:1.6em; font-size:18px;}
 .portfolio li .txt_wrap {display:table-cell; color:#f0f0f0; vertical-align:middle;}
 .portfolio li .txt_wrap .tit {display:block; line-height:1.2em; font-size:26px;}
 .portfolio li .txt_wrap small {display:block; line-height:1.5em; margin-top:10px; font-size:10px; text-transform:uppercase;} */
-.portfolio li .txt_wrap {position:absolute; bottom:55px; left:0; width:100%; padding:0 50px; font-weight:500; color:#00e; text-align:left;}
-.portfolio li .txt_wrap .tit {display:block; line-height:1.5em; font-size:28px;}
-.portfolio li .txt_wrap small {display:block; line-height:1.5em; margin-top:5px; font-size:16px; text-transform:capitalize;}
+.portfolio li .txt_wrap {position:absolute; top:50px; left:0; width:100%; padding:0 50px; font-weight:500; color:#00e; text-align:left;}
+.portfolio li .txt_wrap .tit,
+.portfolio li .txt_wrap small {display:inline-block; position:relative; line-height:1.5em;}
+.portfolio li .txt_wrap .tit {font-size:28px;}
+.portfolio li .txt_wrap small {margin-top:5px; font-size:16px; text-transform:capitalize;}
+.portfolio li .txt_wrap .tit:after,
+.portfolio li .txt_wrap small:after {content:""; position:absolute; left:0; bottom:0; width:100%; height:1px; background:#00e; transition:all 0.3s; transform:scaleX(0);}
+.portfolio li a:hover .txt_wrap .tit:after,
+.portfolio li a:hover .txt_wrap small:after {transform:scaleX(1);}
 
 @media (max-width:1024px) {
 	.portfolio {margin:-12px; margin-top:50px;}
 	.portfolio li {padding:12px;}
-	.portfolio li .txt_wrap {bottom:24px; padding:0 24px;}
+	.portfolio li .txt_wrap {top:24px; padding:0 24px;}
 	.portfolio li .txt_wrap .tit {font-size:20px;}
 	.portfolio li .txt_wrap small {font-size:13px;}
 	
@@ -298,7 +304,7 @@ footer .copyright a:before {background:#888;}
 .sub .detail .txt {padding-top:40px;}
 .sub .detail .box .info_tit {display:block;}
 .sub .detail .box:last-child .info_txt {margin-bottom:0;}
-.sub .detail .box .inner:not(:first-of-type) {margin-top:30px;}
+.sub .detail .box .inner:not(:first-of-type) {margin-top:60px;}
 .sub .detail .slider {overflow:hidden; height:500px; font-size:0;}
 .sub .detail .slider .slide {width:1800px !important; height:500px; background:url(https://via.placeholder.com/1800x500); background-size:cover; background-position:center;}
 .sub .misc {margin-top:10px;}
@@ -316,6 +322,10 @@ footer .copyright a:before {background:#888;}
 .sub .project_list li a:before {content:""; position:absolute; left:0; bottom:0; width:100%; height:1px; background:#888; transition:transform 0.3s; transform:scaleX(0);}
 .sub .project_list li a:hover:before {transform:scaleX(1);}
 .sub .project_list li.on a {font-weight:700; color:#000;}
+.sub .project_link {text-align:center;}
+.sub .project_link.margin {margin-top:120px;}
+.sub .project_link a {display:inline-block; position:relative; height:1.5em; font-size:28px; font-weight:500; color:#00f;}
+.sub .project_link a:before {background-color:#00f;}
 
 @media (max-width:1024px) {
 	.sub .txt {padding-bottom:60px;}
@@ -329,8 +339,10 @@ footer .copyright a:before {background:#888;}
 	.sub h4 {font-size:18px;}
 	.sub .detail .txt {padding-top:30px;}
 	.sub .column_wrap {display:block; margin:0; width:100%;}
-	.sub .column_wrap .column {display:block; margin-bottom:30px; padding:0;}
+	.sub .column_wrap .column {display:block; margin-bottom:20px; padding:0;}
 	.sub .project_list li {line-height:2em; margin:0; font-size:16px;}
+	.sub .project_link a {font-size:20px;}
+	.sub .project_link.margin {margin-top:60px;}
 	.sub .detail .slider {height:250px;}
 	.sub .detail .slider .slide {width:900px !important; height:250px;}
 }
@@ -346,6 +358,7 @@ footer .copyright a:before {background:#888;}
 	.sub h3 {font-size:18px;}
 	.sub h4 {font-size:16px;}
 	.sub .project_list li {line-height:1.8em; margin:0; padding:0 10px; font-size:14px;}
+	.sub .project_link.margin {margin-top:40px;}
 }
 
 /*=========================================================
