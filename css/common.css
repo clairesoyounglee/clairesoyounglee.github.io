@@ -280,7 +280,7 @@ footer .copyright a:before {background:#888;}
 
 /* 공통 */
 .sub .screenshot img {display:block; width:100%;}
-.sub .screenshot .cmt {margin-top:15px; font-size:12px; text-align:center;}
+.sub .cmt {margin-top:15px; font-size:12px; text-align:center;}
 .sub .txt {max-width:960px; padding-bottom:120px;}
 .sub .info_txt {font-size:16px; font-weight:350;}
 
@@ -290,7 +290,7 @@ footer .copyright a:before {background:#888;}
 
 /* 개요 */
 .sub .info .box {padding-top:60px;}
-.sub .project_tit {line-height:.95em; margin-bottom:20px; font-size:36px; font-weight:600;}
+.sub .project_tit {line-height:.95em; margin-bottom:20px; font-size5:36px; font-weight:600;}
 .sub .project_info {width:100%; margin:0 -20px; margin-top:60px; font-size:16px;}
 .sub .project_info:after {content:""; display:block; clear:both;}
 .sub .project_info > div {float:left; width:220px; padding:0 20px;}
@@ -306,7 +306,7 @@ footer .copyright a:before {background:#888;}
 .sub .detail .box:last-child .info_txt {margin-bottom:0;}
 .sub .detail .box .inner:not(:first-of-type) {margin-top:60px;}
 .sub .detail .slider {overflow:hidden; height:500px; font-size:0;}
-.sub .detail .slider .slide {width:1800px !important; height:500px; background:url(https://via.placeholder.com/1800x500); background-size:cover; background-position:center;}
+.sub .detail .slider .slide {width:1830px !important; height:500px; background:url(../images/shoppingnt_tvapp_rolling.png); background-size:cover; background-position:center;}
 .sub .misc {margin-top:10px;}
 .sub .info_txt + .info_txt {margin-top:1em;}
 .sub .column_wrap {display:table; width:calc(100% + 40px); margin-left:-20px; table-layout:fixed;}
@@ -344,7 +344,7 @@ footer .copyright a:before {background:#888;}
 	.sub .project_link a {font-size:20px;}
 	.sub .project_link.margin {margin-top:60px;}
 	.sub .detail .slider {height:250px;}
-	.sub .detail .slider .slide {width:900px !important; height:250px;}
+	.sub .detail .slider .slide {width:915px !important; height:250px;}
 }
 
 @media (max-width:599px) {
