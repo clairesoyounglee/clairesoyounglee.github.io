@@ -290,7 +290,7 @@ footer .copyright a:before {background:#888;}
 
 /* 개요 */
 .sub .info .box {padding-top:60px;}
-.sub .project_tit {line-height:.95em; margin-bottom:20px; font-size5:36px; font-weight:600;}
+.sub .project_tit {line-height:.95em; margin-bottom:20px; font-size:36px; font-weight:600;}
 .sub .project_info {width:100%; margin:0 -20px; margin-top:60px; font-size:16px;}
 .sub .project_info:after {content:""; display:block; clear:both;}
 .sub .project_info > div {float:left; width:220px; padding:0 20px;}
