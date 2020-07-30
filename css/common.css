@@ -249,10 +249,9 @@ footer .copyright a:before {background:#888;}
 =========================================================*/
 
 .main {padding-top:30px;}
+.main hr {width:100%; height:1px; margin:50px 0; border:0; background:#ccc;}
 .main .greeting_msg {line-height:1.48em; font-size:54px; font-weight:500; color:#111;}
 .main .greeting_txt {max-width:800px; line-height:1.625em; margin-top:80px; font-size:16px; color:#111;}
-.main .greeting_txt hr {width:100%; height:1px; border:0; background:#111;}
-.main .greeting_txt hr,
 .main .greeting_txt p {margin-bottom:50px;}
 .main .greeting_txt p:last-child {margin-bottom:25px;}
 .main .greeting_txt p a {color:#00e;}
@@ -266,8 +265,8 @@ footer .copyright a:before {background:#888;}
 
 @media (max-width:1024px) {
 	.main {padding-top:111px;}
+	.main hr {margin:40px 0;}
 	.main .greeting_msg {line-height:1.5em; font-size:28px; letter-spacing:-.0075em;}
-	.main .greeting_txt hr,
 	.main .greeting_txt p {margin-bottom:40px;}
 	.main .extra {margin-top:80px;}
 }
