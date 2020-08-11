@@ -186,15 +186,16 @@ nav .menu li a {display:block; line-height:1.6em; font-size:18px;}
 .portfolio li .txt_wrap {display:table-cell; color:#f0f0f0; vertical-align:middle;}
 .portfolio li .txt_wrap .tit {display:block; line-height:1.2em; font-size:26px;}
 .portfolio li .txt_wrap small {display:block; line-height:1.5em; margin-top:10px; font-size:10px; text-transform:uppercase;} */
-.portfolio li .txt_wrap {position:absolute; top:50px; left:0; width:100%; padding:0 50px; font-weight:500; color:#00e; text-align:left;}
+.portfolio li .txt_wrap {position:absolute; top:50px; left:0; width:100%; padding:0 50px; font-weight:500; color:#222; text-align:left; transition:color .3s;}
+.portfolio li a:hover .txt_wrap {color:#00e;}
 .portfolio li .txt_wrap .tit,
 .portfolio li .txt_wrap small {display:inline-block; position:relative; line-height:1.5em;}
 .portfolio li .txt_wrap .tit {font-size:28px;}
 .portfolio li .txt_wrap small {margin-top:5px; font-size:16px; text-transform:capitalize;}
-.portfolio li .txt_wrap .tit:after,
+/* .portfolio li .txt_wrap .tit:after,
 .portfolio li .txt_wrap small:after {content:""; position:absolute; left:0; bottom:0; width:100%; height:1px; background:#00e; transition:all 0.3s; transform:scaleX(0);}
 .portfolio li a:hover .txt_wrap .tit:after,
-.portfolio li a:hover .txt_wrap small:after {transform:scaleX(1);}
+.portfolio li a:hover .txt_wrap small:after {transform:scaleX(1);} */
 
 @media (max-width:1024px) {
 	.portfolio {margin:-12px; margin-top:50px;}
