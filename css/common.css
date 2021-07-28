@@ -286,7 +286,7 @@ footer .copyright a:before {background:#888;}
 .sub .screenshot img {display:block; width:100%;}
 .sub .cmt {margin-top:15px; font-size:12px; text-align:center;}
 .sub .txt {max-width:960px; padding-bottom:120px;}
-.sub .info_txt {font-size:16px; font-weight:350;}
+.sub .info_txt {font-size:18px; font-weight:350;}
 
 @media (max-width:1024px) {
 	.sub {padding-top:111px;}
@@ -303,7 +303,7 @@ footer .copyright a:before {background:#888;}
 .sub .project_info dd {line-height:1.5em; font-weight:300;}
 
 /* 상세 */
-.sub h3 {line-height:.95em; margin-bottom:29px; font-size:24px; font-weight:600;}
+.sub h3 {line-height:.95em; margin-bottom:29px; font-size:28px; font-weight:600;}
 .sub h4 {margin-bottom:15px; font-size:18px; font-weight:600;}
 .sub .detail .txt {padding-top:40px;}
 .sub .detail .box .info_tit {display:block;}
@@ -334,12 +334,12 @@ footer .copyright a:before {background:#888;}
 @media (max-width:1024px) {
 	.sub .txt {padding-bottom:60px;}
 	.sub .info_tit {font-size:16px;}
-	.sub .info_txt {font-size:14px;}
+	.sub .info_txt {font-size:16px;}
 	.sub .info .box {padding-top:30px;}
 	.sub .project_tit {font-size:26px;}
 	.sub .project_info {margin-top:30px;}
 	.sub .project_info > div {float:none; width:100%; margin-bottom:20px;}
-	.sub h3 {margin-bottom:15px; font-size:20px;}
+	.sub h3 {margin-bottom:15px; font-size:22px;}
 	.sub h4 {font-size:18px;}
 	.sub .detail .txt {padding-top:30px;}
 	.sub .column_wrap {display:block; margin:0; width:100%;}
@@ -354,12 +354,12 @@ footer .copyright a:before {background:#888;}
 @media (max-width:599px) {
 	.sub .txt {padding-bottom:40px;}
 	.sub .info_tit {font-size:14px;}
-	.sub .info_txt {font-size:12px;}
+	.sub .info_txt {font-size:14px;}
 	.sub .info .box {padding-top:20px;}
 	.sub .project_tit {font-size:22px;}
 	.sub .project_info {font-size:14px;}
 	.sub .project_info dt {margin-bottom:5px;}
-	.sub h3 {font-size:18px;}
+	.sub h3 {font-size:20px;}
 	.sub h4 {font-size:16px;}
 	.sub .project_list li {line-height:1.8em; margin:0; padding:0 10px; font-size:14px;}
 	.sub .project_link.margin {margin-top:40px;}
