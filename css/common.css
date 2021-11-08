@@ -38,7 +38,7 @@
 /* @import url('//fonts.googleapis.com/earlyaccess/notosanskr.css'); */
 
 /* Fontawesome */
-@import url('//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* @import url('//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'); */
 
 /*=========================================================
 2. 리셋
@@ -210,6 +210,7 @@ nav .menu li a {display:block; line-height:1.6em; font-size:18px;}
 	.portfolio {margin:0; margin-top:36px;}
 	.portfolio li {float:none; width:100%; margin:24px 0; padding:0;}
 	.portfolio li:last-child {margin-bottom:0;}
+	.portfolio li .txt_wrap .tit {white-space:nowrap;;}
 }
 
 /* 푸터 */
