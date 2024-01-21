@@ -1,216 +1,266 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="Author" content="Lee So Young" />
+		<meta name="Keywords" content="UIdesigner,UXdesigner" />
+		<meta name="Description" content="Lee So Young Portfolio" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Leesoyoung" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="robots" content="noindex" />
+		<title>Lee So Young</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Author" content="Lee So Young">
-    <meta name="Keywords" content="UIdesigner,UXdesigner">
-    <meta name="Description" content="Lee So Young Portfolio">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Leesoyoung">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="robots" content="noindex">
-    <title>Lee So Young</title>
+		<script src="js/jquery.js"></script>
+		<script src="js/common.js"></script>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/common.js"></script>
-    
-    <link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/common.css" />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135251782-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-135251782-1');
-    </script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=UA-135251782-1"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+			gtag("config", "UA-135251782-1");
+		</script>
+	</head>
 
-</head>
+	<body>
+		<div class="wrap">
+			<!-- 헤더 -->
+			<header>
+				<div class="container">
+					<h1>
+						<a href="index.html" data-animation>
+							<img src="images/ico/symbol.png" alt="Lee So Young" />
+						</a>
+					</h1>
 
-<body>
+					<button class="open mobile" type="button">
+						<span></span>
+						<span></span>
+						<span></span>
+						Open mobile menu
+					</button>
 
-    <div class="wrap">
+					<!-- 네비게이션 -->
+					<nav>
+						<div class="nav_wrap">
+							<div class="container">
+								<ul class="menu">
+									<li><a href="index.html" data-border>Work</a></li>
+									<li><a href="side.html" data-border>Side</a></li>
+									<li><a href="about.html" data-border>About</a></li>
+								</ul>
+							</div>
+							<div class="misc">
+								<ul class="sns mobile">
+									<li>
+										<a
+											href="mailto:clairesoyoung.lee@gmail.com"
+											target="_blank"
+											data-border
+											>Mail</a
+										>
+									</li>
+									<li>
+										<a
+											href="https://www.linkedin.com/in/clairesylee"
+											target="_blank"
+											data-border
+											>Linkedin</a
+										>
+									</li>
+									<li>
+										<a
+											href="https://brunch.co.kr/@doer"
+											target="_blank"
+											data-border
+											>Brunch</a
+										>
+									</li>
+									<li>
+										<a
+											href="https://www.pinterest.co.kr/clairesoyounglee/"
+											target="_blank"
+											data-border
+											>Pinterest</a
+										>
+									</li>
+								</ul>
+								<p class="copyright mobile">
+									© Designed by
+									<a href="http://inclaire.com/" target="_blank" data-border
+										>Soyoung</a
+									>
+									&amp; Developed by
+									<a
+										href="https://purymaster.github.io"
+										target="_blank"
+										data-border
+										>Koo</a
+									>
+								</p>
+							</div>
+						</div>
+					</nav>
+					<!-- //네비게이션 -->
+				</div>
+			</header>
+			<!-- //헤더 -->
 
-        <!-- 헤더 -->
-        <header>
-            <div class="container">
-                <h1>
-                    <a href="index.html" data-animation>
-                        <img src="images/ico/symbol.png" alt="Lee So Young">
-                    </a>
-                </h1>
+			<!-- 메인 페이지 -->
+			<div class="content main">
+				<section>
+					<div class="container">
+						<div class="inner">
+							<h2 class="hidden">Message</h2>
+							<p class="greeting_msg" data-animation="fadeInUp" data-delay="0">
+								I want to be a Doer<br />
+								to grow more than yesterday.<br />
+							</p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="container">
+						<h2 class="hidden">Portfolio</h2>
 
-                <button class="open mobile" type="button">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    Open mobile menu
-                </button>
+						<!-- 포트폴리오 -->
+						<ul class="portfolio">
+							<li data-animation="fadeInUp" data-delay="1">
+								<a
+									href="https://www.youtube.com/watch?v=Ewdnc3Q3PaM"
+									target="_blank"
+								>
+									<img src="images/thumbnails/t_fromcon.jpg" alt="" />
+									<div class="overlay">
+										<div class="txt_wrap">
+											<span class="tit">FromCon - eCommerce Trend</span><br />
+											<small>Speaker</small>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li data-animation="fadeInUp" data-delay="2">
+								<a
+									href="https://drive.google.com/file/d/1c3mJ4RU3x2UIM2Xwh-JGyJr3dwnOrSHq/view?fbclid=IwAR3QqoZYe1kjDES-ejJK9Jz2xDrMJALWWBNEursGb_2oLrzPtkM68QNPhQA"
+									target="_blank"
+								>
+									<img src="images/thumbnails/t_uilab.jpg" alt="" />
+									<div class="overlay">
+										<div class="txt_wrap">
+											<span class="tit">UI LAB #5</span><br />
+											<small>Speaker</small>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li data-animation="fadeInUp" data-delay="3">
+								<a
+									href="https://drive.google.com/file/d/1BZEG3q9H-_T8pSR1RTFllcGZpWiH9OCq/view?fbclid=IwAR27B8CId-Xx6mFDWGWvvL-EfGE3P3USrM5aQK2G4XydDK9nsC-vNxlC8Co"
+									target="_blank"
+								>
+									<img src="images/thumbnails/t_fromdesigner.jpg" alt="" />
+									<div class="overlay">
+										<div class="txt_wrap">
+											<span class="tit">From designer #10</span><br />
+											<small>Speaker</small>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li data-animation="fadeInUp" data-delay="4">
+								<a href="page/sejong.html">
+									<img src="images/thumbnails/t_sejong.jpg" alt="" />
+									<div class="overlay">
+										<div class="txt_wrap">
+											<span class="tit">Sejong Center Exhibition</span><br />
+											<small>Calligraphy Exhibition</small>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li data-animation="fadeInUp" data-delay="5">
+								<a href="page/sooltong.html">
+									<img src="images/thumbnails/t_sooltong.jpg" alt="" />
+									<div class="overlay">
+										<div class="txt_wrap">
+											<span class="tit">Sooltong Exhibition</span><br />
+											<small>Calligraphy Exhibition</small>
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+						<!-- //포트폴리오 -->
+					</div>
+				</section>
+			</div>
+			<!-- //메인 페이지 -->
 
-                <!-- 네비게이션 -->
-                <nav>
-                    <div class="nav_wrap">
-                        <div class="container">
-                            <ul class="menu">
-                                <li><a href="index.html" data-border>Work</a></li>
-                                <li><a href="side.html" data-border>Side</a></li>
-                                <li><a href="about.html" data-border>About</a></li>
-                            </ul>
-                        </div>
-                        <div class="misc">
-                            <ul class="sns mobile">
-                                <li>
-                                    <a href="mailto:clairesoyoung.lee@gmail.com" target="_blank" data-border>Mail</a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/in/clairesylee" target="_blank"
-                                        data-border>Linkedin</a>
-                                </li>
-                                <li>
-                                    <a href="https://brunch.co.kr/@doer" target="_blank" data-border>Brunch</a>
-                                </li>
-                                <li>
-                                    <a href="https://www.pinterest.co.kr/clairesoyounglee/" target="_blank"
-                                        data-border>Pinterest</a>
-                                </li>
-                            </ul>
-                            <p class="copyright mobile">
-                                © Designed by
-                                <a href="http://inclaire.com/" target="_blank" data-border>Soyoung</a>
-                                &amp; Developed by
-                                <a href="https://purymaster.github.io" target="_blank" data-border>Koo</a>
-                            </p>
-                        </div>
-                    </div>
-                </nav>
-                <!-- //네비게이션 -->
+			<!-- 푸터 -->
+			<footer>
+				<div class="container">
+					<div class="footer_wrap">
+						<ul class="sns">
+							<li>
+								<a
+									href="mailto:clairesoyoung.lee@gmail.com"
+									target="_blank"
+									data-border
+									>Mail</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://www.linkedin.com/in/clairesylee"
+									target="_blank"
+									data-border
+									>Linkedin</a
+								>
+							</li>
+							<li>
+								<a href="https://brunch.co.kr/@doer" target="_blank" data-border
+									>Brunch</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://www.pinterest.co.kr/clairesoyounglee/"
+									target="_blank"
+									data-border
+									>Pinterest</a
+								>
+							</li>
+						</ul>
+						<p class="copyright">
+							© Designed by
+							<a href="http://inclaire.com/" target="_blank" data-border
+								>Soyoung</a
+							>
+							&amp; Developed by
+							<a href="https://purymaster.github.io" target="_blank" data-border
+								>Koo</a
+							>
+						</p>
+					</div>
+				</div>
+			</footer>
+			<!-- //푸터 -->
+		</div>
 
-            </div>
-        </header>
-        <!-- //헤더 -->
-
-        <!-- 메인 페이지 -->
-        <div class="content main">
-            <section>
-                <div class="container">
-                    <div class="inner">
-                        <h2 class="hidden">Message</h2>
-                        <p class="greeting_msg" data-animation="fadeInUp" data-delay="0">
-                            I want to be a Doer<br>
-                            to grow more than yesterday.<br>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="container">
-                    <h2 class="hidden">Portfolio</h2>
-
-                    <!-- 포트폴리오 -->
-                    <ul class="portfolio">
-                        <li data-animation="fadeInUp" data-delay="1">
-                            <a href="https://www.youtube.com/watch?v=Ewdnc3Q3PaM" target="_blank">
-                                <img src="images/thumbnails/t_fromcon.jpg" alt="">
-                                <div class="overlay">
-                                    <div class="txt_wrap">
-                                        <span class="tit">FromCon - eCommerce Trend</span><br>
-                                        <small>Speaker</small>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li data-animation="fadeInUp" data-delay="2">
-                            <a href="https://drive.google.com/file/d/1c3mJ4RU3x2UIM2Xwh-JGyJr3dwnOrSHq/view?fbclid=IwAR3QqoZYe1kjDES-ejJK9Jz2xDrMJALWWBNEursGb_2oLrzPtkM68QNPhQA" target="_blank">
-                                <img src="images/thumbnails/t_uilab.jpg" alt="">
-                                <div class="overlay">
-                                    <div class="txt_wrap">
-                                        <span class="tit">UI LAB #5</span><br>
-                                        <small>Speaker</small>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li data-animation="fadeInUp" data-delay="3">
-                            <a href="https://drive.google.com/file/d/1BZEG3q9H-_T8pSR1RTFllcGZpWiH9OCq/view?fbclid=IwAR27B8CId-Xx6mFDWGWvvL-EfGE3P3USrM5aQK2G4XydDK9nsC-vNxlC8Co" target="_blank">
-                                <img src="images/thumbnails/t_fromdesigner.jpg" alt="">
-                                <div class="overlay">
-                                    <div class="txt_wrap">
-                                        <span class="tit">From designer #10</span><br>
-                                        <small>Speaker</small>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li data-animation="fadeInUp" data-delay="4">
-                            <a href="page/sejong.html">
-                                <img src="images/thumbnails/t_sejong.jpg" alt="">
-                                <div class="overlay">
-                                    <div class="txt_wrap">
-                                        <span class="tit">Sejong Center Exhibition</span><br>
-                                        <small>Calligraphy Exhibition</small>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li data-animation="fadeInUp" data-delay="5">
-                            <a href="page/sooltong.html">
-                                <img src="images/thumbnails/t_sooltong.jpg" alt="">
-                                <div class="overlay">
-                                    <div class="txt_wrap">
-                                        <span class="tit">Sooltong Exhibition</span><br>
-                                        <small>Calligraphy Exhibition</small>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- //포트폴리오 -->
-
-                </div>
-            </section>
-        </div>
-        <!-- //메인 페이지 -->
-
-        <!-- 푸터 -->
-        <footer>
-            <div class="container">
-                <div class="footer_wrap">
-                    <ul class="sns">
-                        <li>
-                            <a href="mailto:clairesoyoung.lee@gmail.com" target="_blank" data-border>Mail</a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/clairesylee" target="_blank" data-border>Linkedin</a>
-                        </li>
-                        <li>
-                            <a href="https://brunch.co.kr/@doer" target="_blank" data-border>Brunch</a>
-                        </li>
-                        <li>
-                            <a href="https://www.pinterest.co.kr/clairesoyounglee/" target="_blank"
-                                data-border>Pinterest</a>
-                        </li>
-                    </ul>
-                    <p class="copyright">
-                        © Designed by
-                        <a href="http://inclaire.com/" target="_blank" data-border>Soyoung</a>
-                        &amp; Developed by
-                        <a href="https://purymaster.github.io" target="_blank" data-border>Koo</a>
-                    </p>
-                </div>
-            </div>
-        </footer>
-        <!-- //푸터 -->
-
-    </div>
-
-    <!-- TOP 버튼 -->
-    <div class="move_top">
-		<button type="button">Move to page top</button>
-	</div>
-    <!-- //TOP 버튼 -->
-
-</body>
-
+		<!-- TOP 버튼 -->
+		<div class="move_top">
+			<button type="button">Move to page top</button>
+		</div>
+		<!-- //TOP 버튼 -->
+	</body>
 </html>

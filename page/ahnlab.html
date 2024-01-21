@@ -1,210 +1,295 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="Author" content="Lee So Young" />
+		<meta name="Keywords" content="UIdesigner,UXdesigner" />
+		<meta name="Description" content="Lee So Young Portfolio" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Leesoyoung" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="robots" content="noindex" />
+		<title>Lee So Young</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Author" content="Lee So Young">
-    <meta name="Keywords" content="UIdesigner,UXdesigner">
-    <meta name="Description" content="Lee So Young Portfolio">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Leesoyoung">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="robots" content="noindex">
-    <title>Lee So Young</title>
+		<script src="../js/jquery.js"></script>
+		<script src="../js/common.js"></script>
 
-    <script src="../js/jquery.js"></script>
-    <script src="../js/common.js"></script>
-    
-    <link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../css/common.css" />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135251782-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-135251782-1');
-    </script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=UA-135251782-1"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+			gtag("config", "UA-135251782-1");
+		</script>
+	</head>
 
-</head>
+	<body>
+		<div class="wrap">
+			<!-- 헤더 -->
+			<header>
+				<div class="container">
+					<h1>
+						<a href="../index.html">
+							<img src="../images/ico/symbol.png" alt="Lee So Young" />
+						</a>
+					</h1>
 
-<body>
-    <div class="wrap">
+					<button class="open mobile" type="button">
+						<span></span>
+						<span></span>
+						<span></span>
+						Open mobile menu
+					</button>
 
-        <!-- 헤더 -->
-        <header>
-            <div class="container">
-                <h1>
-                    <a href="../index.html">
-                        <img src="../images/ico/symbol.png" alt="Lee So Young">
-                    </a>
-                </h1>
+					<!-- 네비게이션 -->
+					<nav>
+						<div class="nav_wrap">
+							<div class="container">
+								<ul class="menu">
+									<li><a href="../index.html" data-border>Work</a></li>
+									<li><a href="../side.html" data-border>Side</a></li>
+									<li><a href="../about.html" data-border>About</a></li>
+								</ul>
+							</div>
+							<div class="misc">
+								<ul class="sns mobile">
+									<li>
+										<a
+											href="mailto:clairesoyoung.lee@gmail.com"
+											target="_blank"
+											data-border
+											>Mail</a
+										>
+									</li>
+									<li>
+										<a
+											href="https://www.linkedin.com/in/clairesylee"
+											target="_blank"
+											data-border
+											>Linkedin</a
+										>
+									</li>
+									<li>
+										<a
+											href="https://brunch.co.kr/@doer"
+											target="_blank"
+											data-border
+											>Brunch</a
+										>
+									</li>
+									<li>
+										<a
+											href="https://www.pinterest.co.kr/clairesoyounglee/"
+											target="_blank"
+											data-border
+											>Pinterest</a
+										>
+									</li>
+								</ul>
+								<p class="copyright mobile">
+									© Designed by
+									<a href="http://inclaire.com/" target="_blank" data-border
+										>Soyoung</a
+									>
+									&amp; Developed by
+									<a
+										href="https://purymaster.github.io"
+										target="_blank"
+										data-border
+										>Koo</a
+									>
+								</p>
+							</div>
+						</div>
+					</nav>
+					<!-- //네비게이션 -->
+				</div>
+			</header>
+			<!-- //헤더 -->
 
-                <button class="open mobile" type="button">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    Open mobile menu
-                </button>
+			<!-- 메인 페이지 -->
+			<div class="content sub">
+				<section>
+					<!-- 개요 -->
+					<div class="info">
+						<div
+							class="box screenshot"
+							data-animation="fadeInUp"
+							data-delay="0"
+						>
+							<img src="../images/ahnlab_01.jpg" alt="" />
+						</div>
 
-                <!-- 네비게이션 -->
-                <nav>
-                    <div class="nav_wrap">
-                        <div class="container">
-                            <ul class="menu">
-                                <li><a href="../index.html" data-border>Work</a></li>
-                                <li><a href="../side.html" data-border>Side</a></li>
-                                <li><a href="../about.html" data-border>About</a></li>
-                            </ul>
-                        </div>
-                        <div class="misc">
-                            <ul class="sns mobile">
-                                <li>
-                                    <a href="mailto:clairesoyoung.lee@gmail.com" target="_blank" data-border>Mail</a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/in/clairesylee" target="_blank"
-                                        data-border>Linkedin</a>
-                                </li>
-                                <li>
-                                    <a href="https://brunch.co.kr/@doer" target="_blank" data-border>Brunch</a>
-                                </li>
-                                <li>
-                                    <a href="https://www.pinterest.co.kr/clairesoyounglee/" target="_blank"
-                                        data-border>Pinterest</a>
-                                </li>
-                            </ul>
-                            <p class="copyright mobile">
-                                © Designed by
-                                <a href="http://inclaire.com/" target="_blank" data-border>Soyoung</a>
-                                &amp; Developed by
-                                <a href="https://purymaster.github.io" target="_blank" data-border>Koo</a>
-                            </p>
-                        </div>
-                    </div>
-                </nav>
-                <!-- //네비게이션 -->
+						<div class="box txt container">
+							<!-- 프로젝트 설명 -->
+							<div data-animation="fadeInUp" data-delay="0">
+								<h2 class="project_tit">Ahnlab.com Mobile Website</h2>
+								<div class="info_txt">
+									대한민국을 대표하는 보안회사인 안랩 Ahnlab의 모바일웹 리뉴얼
+									프로젝트입니다. PC 웹사이트의 톤 앤 매너는 유지하되 모바일
+									환경에서도 높은 가독성과 정리된 UI로 경험할 수 있도록 하는
+									것이 목표였으며, 다양한 연령대의 유저가 이용하는 서비스이기
+									때문에 보다 더 직관적으로 원하는 페이지를 확인하고 이동할 수
+									있도록 설계했습니다.
+								</div>
+							</div>
+							<!-- //프로젝트 설명 -->
 
-            </div>
-        </header>
-        <!-- //헤더 -->
+							<!-- 프로젝트 정보 -->
+							<dl class="project_info">
+								<div data-animation="fadeInUp" data-delay="1">
+									<dt>Role</dt>
+									<dd>UI Design</dd>
+									<dd>PL</dd>
+									<dd>Create Guideline</dd>
+								</div>
+								<div data-animation="fadeInUp" data-delay="3">
+									<dt>Date</dt>
+									<dd>2015. 04 - 2015. 07</dd>
+								</div>
+								<div data-animation="fadeInUp" data-delay="5">
+									<dt>Participation</dt>
+									<dd>70%</dd>
+								</div>
+							</dl>
+							<!-- //프로젝트 정보 -->
+						</div>
+					</div>
+					<!-- //개요 -->
 
-        <!-- 메인 페이지 -->
-        <div class="content sub">
-            <section>
+					<!-- 상세 -->
+					<div class="detail">
+						<div
+							class="box screenshot container"
+							data-animation="fadeInUp"
+							data-delay="0"
+						>
+							<img src="../images/ahnlab_02.jpg" alt="" />
+						</div>
 
-                <!-- 개요 -->
-                <div class="info">
+						<div
+							class="box txt container"
+							data-animation="fadeInUp"
+							data-delay="0"
+						>
+							<div class="inner">
+								<h3>Overview</h3>
+								<p class="info_txt">
+									안랩 모바일 사이트는 PC 웹사이트 개편 후 1년이 지났음에도
+									불구하고 기존의 형태를 유지하고 있었기 때문에, 최대한 빠른
+									시간 내에 많은 페이지를 모바일 환경에 맞는 UI를 적용하면서도
+									PC 웹사이트와의 톤 앤 매너 및 방향성을 유지해야 하는 미션이
+									있었습니다. 저는 디자인 PL을 맡아 대/중/소분류의 depth를
+									모바일 환경에 맞게 구분 짓는 과정을 진행하였고, 서비스의
+									방향에 맞는 메인 화면의 디자인을 진행했습니다. 메인, 메뉴를
+									제외한 중/소분류 화면은 기획안 없이 PC 사이트의 내용을 보고 약
+									100장 정도의 화면을 설계해야 했으므로, 서브 디자이너와
+									퍼블리셔가 빠르게 진행할 수 있도록 스타일 가이드를 제작하여
+									배포 하였고 프로젝트가 끝난 후에는 WSG를 정리하여 고객사에
+									공유했습니다.
+								</p>
+							</div>
+							<div class="inner">
+								<h3>Objective</h3>
+								<ul class="info_txt type3" data-list>
+									<li>
+										1. 디바이스 사이즈의 한계를 극복한 가독성 있는 내용 전달
+									</li>
+									<li>
+										2. PC 웹사이트와 하나의 서비스로 느껴지게끔 톤 앤 매너를
+										맞추기
+									</li>
+									<li>3. 원활한 다국어 대응</li>
+								</ul>
+							</div>
+						</div>
 
-                    <div class="box screenshot" data-animation="fadeInUp" data-delay="0">
-                        <img src="../images/ahnlab_01.jpg" alt="">
-                    </div>
+						<div
+							class="box screenshot container"
+							data-animation="fadeInUp"
+							data-delay="0"
+						>
+							<img src="../images/ahnlab_03.jpg" alt="" />
+						</div>
 
-                    <div class="box txt container">
+						<div
+							class="box txt container"
+							data-animation="fadeInUp"
+							data-delay="0"
+						>
+							<h3>Language</h3>
+							<p class="info_txt">
+								다양한 언어를 운영과 브랜드의 일관성을 위해 하나의 UI로
+								전개했으며, 획과 모양이 다른 다양한 언어와 많은 양의 정보를
+								일관성 있게 제공하기 위하여 가독성을 가장 큰 중점으로 두는
+								포털사이트 및 은행 서비스, 출판 플랫폼 등을 참고하여
+								진행했습니다.
+							</p>
+						</div>
 
-                        <!-- 프로젝트 설명 -->
-                        <div data-animation="fadeInUp" data-delay="0">
-                            <h2 class="project_tit">Ahnlab.com Mobile Website</h2>
-                            <div class="info_txt" lang="ko">
-                                대한민국을 대표하는 보안회사인 안랩 Ahnlab의 모바일웹 리뉴얼 프로젝트입니다. PC 웹사이트의 톤 앤 매너는 유지하되 모바일 환경에서도 높은 가독성과
-                                정리된 UI로 경험할 수 있도록 하는 것이 목표였으며, 다양한 연령대의 유저가 이용하는 서비스이기 때문에 보다 더 직관적으로 원하는 페이지를 확인하고 이동할
-                                수 있도록 설계했습니다.
-                            </div>
-                        </div>
-                        <!-- //프로젝트 설명 -->
+						<div
+							class="box screenshot container"
+							data-animation="fadeInUp"
+							data-delay="0"
+						>
+							<img src="../images/ahnlab_04.jpg" alt="" />
+						</div>
 
-                        <!-- 프로젝트 정보 -->
-                        <dl class="project_info">
-                            <div data-animation="fadeInUp" data-delay="1">
-                                <dt>Role</dt>
-                                <dd>UI Design</dd>
-                                <dd>PL</dd>
-                                <dd>Create Guideline</dd>
-                            </div>
-                            <div data-animation="fadeInUp" data-delay="3">
-                                <dt>Date</dt>
-                                <dd>2015. 04 - 2015. 07</dd>
-                            </div>
-                            <div data-animation="fadeInUp" data-delay="5">
-                                <dt>Participation</dt>
-                                <dd>70%</dd>
-                            </div>
-                        </dl>
-                        <!-- //프로젝트 정보 -->
+						<div
+							class="box txt container"
+							data-animation="fadeInUp"
+							data-delay="0"
+						>
+							<h3>Feature</h3>
+							<p class="info_txt">
+								상품 안내 페이지에서는 다소 낯선 제품인 보안 제품이 어렵게
+								느껴지지 않도록 아이콘과 다이어그램 등을 적극 활용하여 사용자의
+								이해도를 높이기 위해 노력 했습니다. 또한 제품의 특장점 및
+								상품간의 이동이 용이할 수 있도록 익숙한 장치인 드롭메뉴와 플리킹
+								탭을 활용하였고, 각각의 요소들이 상품 페이지 외의 다른
+								페이지에서도 사용할 수 있게 요소 단위별로 나누어 운영성 및
+								일관성을 높였습니다.
+							</p>
+						</div>
 
-                    </div>
-                </div>
-                <!-- //개요 -->
+						<div
+							class="box screenshot container"
+							data-animation="fadeInUp"
+							data-delay="0"
+						>
+							<img src="../images/ahnlab_05.jpg" alt="" />
+						</div>
 
-                <!-- 상세 -->
-                <div class="detail">
+						<div
+							class="box txt container"
+							data-animation="fadeInUp"
+							data-delay="0"
+						>
+							<h3>Design style guide</h3>
+							<p class="info_txt">
+								안랩은 지속적으로 상품 페이지 및 프로모션 등을 오픈하기 때문에
+								일관성있는 스타일 가이드라인 작성이 필요 했습니다. 기존 PC
+								웹사이트에서 사용된 컬러를 기반으로 안정감과 신뢰성을 느낄 수
+								있는 딥한 블루 컬러를 추가하였고, 각 페이지의 역할에 따른 폰트
+								사이즈 및 간격, 행간 등을 일치시키기 위해 디테일한 가이드 라인을
+								작성하여 배포했습니다.
+							</p>
+						</div>
+					</div>
+					<!-- //상세 -->
+				</section>
 
-                    <div class="box screenshot container" data-animation="fadeInUp" data-delay="0">
-                        <img src="../images/ahnlab_02.jpg" alt="">
-                    </div>
-
-                    <div class="box txt container" data-animation="fadeInUp" data-delay="0">
-                        <div class="inner">
-                            <h3>Overview</h3>
-                            <p class="info_txt" lang="ko">
-                                안랩 모바일 사이트는 PC 웹사이트 개편 후 1년이 지났음에도 불구하고 기존의 형태를 유지하고 있었기 때문에, 최대한 빠른 시간 내에 많은 페이지를 모바일
-                                환경에 맞는 UI를 적용하면서도 PC 웹사이트와의 톤 앤 매너 및 방향성을 유지해야 하는 미션이 있었습니다. 저는 디자인 PL을 맡아 대/중/소분류의
-                                depth를 모바일 환경에 맞게 구분 짓는 과정을 진행하였고, 서비스의 방향에 맞는 메인 화면의 디자인을 진행했습니다. 메인, 메뉴를 제외한 중/소분류 화면은
-                                기획안 없이 PC 사이트의 내용을 보고 약 100장 정도의 화면을 설계해야 했으므로, 서브 디자이너와 퍼블리셔가 빠르게 진행할 수 있도록 스타일 가이드를
-                                제작하여 배포 하였고 프로젝트가 끝난 후에는 WSG를 정리하여 고객사에 공유했습니다.
-                            </p>
-                        </div>
-                        <div class="inner">
-                            <h3>Objective</h3>
-                            <ul class="info_txt type3" lang="ko" data-list>
-                                <li>1. 디바이스 사이즈의 한계를 극복한 가독성 있는 내용 전달 </li>
-                                <li>2. PC 웹사이트와 하나의 서비스로 느껴지게끔 톤 앤 매너를 맞추기</li>
-                                <li>3. 원활한 다국어 대응</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="box screenshot container" data-animation="fadeInUp" data-delay="0">
-                        <img src="../images/ahnlab_03.jpg" alt="">
-                    </div>
-
-                    <div class="box txt container" data-animation="fadeInUp" data-delay="0">
-                        <h3>Language</h3>
-                        <p class="info_txt" lang="ko">
-                            다양한 언어를 운영과 브랜드의 일관성을 위해 하나의 UI로 전개했으며, 획과 모양이 다른 다양한 언어와 많은 양의 정보를 일관성 있게 제공하기 위하여 가독성을 가장 큰 중점으로 두는 포털사이트 및 은행 서비스, 출판 플랫폼 등을 참고하여 진행했습니다.
-                        </p>
-                    </div>
-
-                    <div class="box screenshot container" data-animation="fadeInUp" data-delay="0">
-                        <img src="../images/ahnlab_04.jpg" alt="">
-                    </div>
-
-                    <div class="box txt container" data-animation="fadeInUp" data-delay="0">
-                        <h3>Feature</h3>
-                        <p class="info_txt" lang="ko">
-                            상품 안내 페이지에서는 다소 낯선 제품인 보안 제품이 어렵게 느껴지지 않도록 아이콘과 다이어그램 등을 적극 활용하여 사용자의 이해도를 높이기 위해 노력 했습니다. 또한 제품의 특장점 및 상품간의 이동이 용이할 수 있도록 익숙한 장치인 드롭메뉴와 플리킹 탭을 활용하였고, 각각의 요소들이 상품 페이지 외의 다른 페이지에서도 사용할 수 있게 요소 단위별로 나누어 운영성 및 일관성을 높였습니다.
-                        </p>
-                    </div>
-
-                    <div class="box screenshot container" data-animation="fadeInUp" data-delay="0">
-                        <img src="../images/ahnlab_05.jpg" alt="">
-                    </div>
-
-                    <div class="box txt container" data-animation="fadeInUp" data-delay="0">
-                        <h3>Design style guide</h3>
-                        <p class="info_txt" lang="ko">
-                            안랩은 지속적으로 상품 페이지 및 프로모션 등을 오픈하기 때문에 일관성있는 스타일 가이드라인 작성이 필요 했습니다. 기존 PC 웹사이트에서 사용된 컬러를 기반으로 안정감과 신뢰성을 느낄 수 있는 딥한 블루 컬러를 추가하였고, 각 페이지의 역할에 따른 폰트 사이즈 및 간격, 행간 등을 일치시키기 위해 디테일한 가이드 라인을 작성하여 배포했습니다.
-                        </p>
-                    </div>
-
-                </div>
-                <!-- //상세 -->
-
-            </section>
-
-            <div class="container">
-                <!-- <div class="project_list">
+				<div class="container">
+					<!-- <div class="project_list">
                     <ul>
                         <li><a href="../index.html">All</a></li>
                         <li><a href="../page/shoppingnttvapp.html">Shopping&T TV App</a></li>
@@ -217,52 +302,68 @@
                         <li><a href="../page/sooltong.html">Sooltong</a></li>
                     </ul>
                 </div> -->
-                <div class="project_link">
-                    <a href="skbeme.html" data-border>Next Project →</a>
-                </div>
-            </div>
+					<div class="project_link">
+						<a href="kiaao.html" data-border>Next Project →</a>
+					</div>
+				</div>
+			</div>
+			<!-- //메인 페이지 -->
 
-        </div>
-        <!-- //메인 페이지 -->
+			<!-- 푸터 -->
+			<footer>
+				<div class="container">
+					<div class="footer_wrap">
+						<ul class="sns">
+							<li>
+								<a
+									href="mailto:clairesoyoung.lee@gmail.com"
+									target="_blank"
+									data-border
+									>Mail</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://www.linkedin.com/in/clairesylee"
+									target="_blank"
+									data-border
+									>Linkedin</a
+								>
+							</li>
+							<li>
+								<a href="https://brunch.co.kr/@doer" target="_blank" data-border
+									>Brunch</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://www.pinterest.co.kr/clairesoyounglee/"
+									target="_blank"
+									data-border
+									>Pinterest</a
+								>
+							</li>
+						</ul>
+						<p class="copyright">
+							© Designed by
+							<a href="http://inclaire.com/" target="_blank" data-border
+								>Soyoung</a
+							>
+							&amp; Developed by
+							<a href="https://purymaster.github.io" target="_blank" data-border
+								>Koo</a
+							>
+						</p>
+					</div>
+				</div>
+			</footer>
+			<!-- //푸터 -->
+		</div>
 
-        <!-- 푸터 -->
-        <footer>
-            <div class="container">
-                <div class="footer_wrap">
-                    <ul class="sns">
-                        <li>
-                            <a href="mailto:clairesoyoung.lee@gmail.com" target="_blank" data-border>Mail</a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/clairesylee" target="_blank" data-border>Linkedin</a>
-                        </li>
-                        <li>
-                            <a href="https://brunch.co.kr/@doer" target="_blank" data-border>Brunch</a>
-                        </li>
-                        <li>
-                            <a href="https://www.pinterest.co.kr/clairesoyounglee/" target="_blank"
-                                data-border>Pinterest</a>
-                        </li>
-                    </ul>
-                    <p class="copyright">
-                        © Designed by
-                        <a href="http://inclaire.com/" target="_blank" data-border>Soyoung</a>
-                        &amp; Developed by
-                        <a href="https://purymaster.github.io" target="_blank" data-border>Koo</a>
-                    </p>
-                </div>
-            </div>
-        </footer>
-        <!-- //푸터 -->
-
-    </div>
-
-    <!-- TOP 버튼 -->
-    <div class="move_top">
-        <button type="button">Move to page top</button>
-    </div>
-    <!-- //TOP 버튼 -->
-
-</body>
-
+		<!-- TOP 버튼 -->
+		<div class="move_top">
+			<button type="button">Move to page top</button>
+		</div>
+		<!-- //TOP 버튼 -->
+	</body>
 </html>

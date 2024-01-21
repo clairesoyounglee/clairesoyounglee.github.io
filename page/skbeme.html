@@ -1,192 +1,275 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="Author" content="Lee So Young" />
+		<meta name="Keywords" content="UIdesigner,UXdesigner" />
+		<meta name="Description" content="Lee So Young Portfolio" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Leesoyoung" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="robots" content="noindex" />
+		<title>Lee So Young</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Author" content="Lee So Young">
-    <meta name="Keywords" content="UIdesigner,UXdesigner">
-    <meta name="Description" content="Lee So Young Portfolio">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Leesoyoung">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="robots" content="noindex">
-    <title>Lee So Young</title>
+		<script src="../js/jquery.js"></script>
+		<script src="../js/common.js"></script>
 
-    <script src="../js/jquery.js"></script>
-    <script src="../js/common.js"></script>
-    
-    <link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../css/common.css" />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135251782-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-135251782-1');
-    </script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=UA-135251782-1"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+			gtag("config", "UA-135251782-1");
+		</script>
+	</head>
 
-</head>
+	<body>
+		<div class="wrap">
+			<!-- 헤더 -->
+			<header>
+				<div class="container">
+					<h1>
+						<a href="../index.html">
+							<img src="../images/ico/symbol.png" alt="Lee So Young" />
+						</a>
+					</h1>
 
-<body>
+					<button class="open mobile" type="button">
+						<span></span>
+						<span></span>
+						<span></span>
+						Open mobile menu
+					</button>
 
-    <div class="wrap">
+					<!-- 네비게이션 -->
+					<nav>
+						<div class="nav_wrap">
+							<div class="container">
+								<ul class="menu">
+									<li><a href="../index.html" data-border>Work</a></li>
+									<li><a href="../side.html" data-border>Side</a></li>
+									<li><a href="../about.html" data-border>About</a></li>
+								</ul>
+							</div>
+							<div class="misc">
+								<ul class="sns mobile">
+									<li>
+										<a
+											href="mailto:clairesoyoung.lee@gmail.com"
+											target="_blank"
+											data-border
+											>Mail</a
+										>
+									</li>
+									<li>
+										<a
+											href="https://www.linkedin.com/in/clairesylee"
+											target="_blank"
+											data-border
+											>Linkedin</a
+										>
+									</li>
+									<li>
+										<a
+											href="https://brunch.co.kr/@doer"
+											target="_blank"
+											data-border
+											>Brunch</a
+										>
+									</li>
+									<li>
+										<a
+											href="https://www.pinterest.co.kr/clairesoyounglee/"
+											target="_blank"
+											data-border
+											>Pinterest</a
+										>
+									</li>
+								</ul>
+								<p class="copyright mobile">
+									© Designed by
+									<a href="http://inclaire.com/" target="_blank" data-border
+										>Soyoung</a
+									>
+									&amp; Developed by
+									<a
+										href="https://purymaster.github.io"
+										target="_blank"
+										data-border
+										>Koo</a
+									>
+								</p>
+							</div>
+						</div>
+					</nav>
+					<!-- //네비게이션 -->
+				</div>
+			</header>
+			<!-- //헤더 -->
 
-        <!-- 헤더 -->
-        <header>
-            <div class="container">
-                <h1>
-                    <a href="../index.html">
-                        <img src="../images/ico/symbol.png" alt="Lee So Young">
-                    </a>
-                </h1>
+			<!-- 메인 페이지 -->
+			<div class="content sub">
+				<section>
+					<!-- 개요 -->
+					<div class="info">
+						<div
+							class="box screenshot"
+							data-animation="fadeInUp"
+							data-delay="0"
+						>
+							<img src="../images/sk_beme_01.jpg" alt="" />
+						</div>
 
-                <button class="open mobile" type="button">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    Open mobile menu
-                </button>
+						<div class="box txt container">
+							<!-- 프로젝트 설명 -->
+							<div data-animation="fadeInUp" data-delay="0">
+								<h2 class="project_tit">SK Telecom Be-Me Platform</h2>
+								<div class="info_txt">
+									Be-Me Platform은 SK Telecom의 개인화 서비스를 위한 Case study
+									및 상품 개발의 목적으로 만들어진 프로젝트로, ‘EGGO’ 라는 로봇
+									개인 비서가 빅데이터, 위치 서비스 기반으로 스페셜한 이벤트가
+									발생했을 때 Remind 해준다는 컨셉의 서비스 입니다. 저는 Be-Me
+									Platform 프로젝트 중 '팝업 형태'로 서비스하는 'EGGO NOTI.
+									CENTER' 앱의 전체 디자인과 특별한 이벤트를 자동으로 기록해
+									주는 'Special day' 앱의 일부를 디자인 했습니다.
+								</div>
+							</div>
+							<!-- //프로젝트 설명 -->
 
-                <!-- 네비게이션 -->
-                <nav>
-                    <div class="nav_wrap">
-                        <div class="container">
-                            <ul class="menu">
-                                <li><a href="../index.html" data-border>Work</a></li>
-                                <li><a href="../side.html" data-border>Side</a></li>
-                                <li><a href="../about.html" data-border>About</a></li>
-                            </ul>
-                        </div>
-                        <div class="misc">
-                            <ul class="sns mobile">
-                                <li>
-                                    <a href="mailto:clairesoyoung.lee@gmail.com" target="_blank" data-border>Mail</a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/in/clairesylee" target="_blank"
-                                        data-border>Linkedin</a>
-                                </li>
-                                <li>
-                                    <a href="https://brunch.co.kr/@doer" target="_blank" data-border>Brunch</a>
-                                </li>
-                                <li>
-                                    <a href="https://www.pinterest.co.kr/clairesoyounglee/" target="_blank"
-                                        data-border>Pinterest</a>
-                                </li>
-                            </ul>
-                            <p class="copyright mobile">
-                                © Designed by
-                                <a href="http://inclaire.com/" target="_blank" data-border>Soyoung</a>
-                                &amp; Developed by
-                                <a href="https://purymaster.github.io" target="_blank" data-border>Koo</a>
-                            </p>
-                        </div>
-                    </div>
-                </nav>
-                <!-- //네비게이션 -->
+							<!-- 프로젝트 정보 -->
+							<dl class="project_info">
+								<div data-animation="fadeInUp" data-delay="1">
+									<dt>Role</dt>
+									<dd>UI Design</dd>
+									<dd>Brand Design</dd>
+									<dd>Create Guideline</dd>
+								</div>
+								<div data-animation="fadeInUp" data-delay="3">
+									<dt>Date</dt>
+									<dd>2014. 04 - 2014. 07</dd>
+								</div>
+								<div data-animation="fadeInUp" data-delay="5">
+									<dt>Participation</dt>
+									<dd>50%</dd>
+								</div>
+							</dl>
+							<!-- //프로젝트 정보 -->
+						</div>
+					</div>
+					<!-- //개요 -->
 
-            </div>
-        </header>
-        <!-- //헤더 -->
+					<!-- 상세 -->
+					<div class="detail">
+						<div
+							class="box screenshot container"
+							data-animation="fadeInUp"
+							data-delay="0"
+						>
+							<img src="../images/sk_beme_02.jpg" alt="" />
+						</div>
 
-        <!-- 메인 페이지 -->
-        <div class="content sub">
-            <section>
+						<div
+							class="box txt container"
+							data-animation="fadeInUp"
+							data-delay="0"
+						>
+							<h3>Overview</h3>
+							<p class="info_txt">
+								이 프로젝트를 통해 EGGO NOTI. CENTER와 Special day 두개의 앱을
+								병렬로 디자인하게 되었는데, 기획 및 로봇 캐릭터 디자인이
+								진행되는 동안 클라이언트의 방향성에 맞추어 Be-Me Platform의
+								메인이 되는 '팝업 형태'의 디자인을 제안 및 진행 하였고, EGGO
+								NOTI. CENTER를 컨트롤 하는 앱의 기획이 진행되는 동안 'Special
+								day' 앱의 서브 페이지 디자인 및 GUI Guideline을 작성 하고 로고를
+								디자인하는 등 약 5개월의 기간 내에 병렬로 다양한 디자인을
+								진행하였습니다. 개발을 위한 GUI Guideline을 작성 하였고,
+								서비스의 구체적인 이름이 정해진 이후에는 로고까지 맡아서 디자인
+								하였습니다.
+							</p>
+						</div>
 
-                <!-- 개요 -->
-                <div class="info">
+						<div
+							class="box screenshot container"
+							data-animation="fadeInUp"
+							data-delay="0"
+						>
+							<img src="../images/sk_beme_05.jpg" alt="" />
+						</div>
 
-                    <div class="box screenshot" data-animation="fadeInUp" data-delay="0">
-                        <img src="../images/sk_beme_01.jpg" alt="">
-                    </div>
+						<div
+							class="box txt container"
+							data-animation="fadeInUp"
+							data-delay="0"
+						>
+							<h3>EGGO NOTI. CENTER Design point</h3>
+							<p class="info_txt">
+								EGGO NOTI. CENTER 는 '새로운 곳' 에 갔거나, '생일' 등의 이벤트가
+								발생했을 때 EGGO라는 로봇이 모바일 기본 화면에 팝업 형태로
+								나타나 이벤트를 알려주는 개인 비서 컨셉의 서비스로, Be-Me
+								Platform에 모두 탑재되는 서비스이기 때문에 ‘기본적이고 범용적인’
+								사용성에 포인트를 두고 컬러감을 최대한 배제하여 디자인 하였으며,
+								팝업이 여러 개 왔을 경우를 대비하여 팝업이 쌓이는 디테일을 표현
+								했습니다. 또 기본 알림 텍스트 외의 각 서비스에 맞는 감정
+								아이콘이나 사진 등을 삽입할 수 있는 공간을 고려하여
+								설계했습니다.
+							</p>
+						</div>
 
-                    <div class="box txt container">
+						<div
+							class="box screenshot container"
+							data-animation="fadeInUp"
+							data-delay="0"
+						>
+							<img src="../images/sk_beme_03.jpg" alt="" />
+						</div>
 
-                        <!-- 프로젝트 설명 -->
-                        <div data-animation="fadeInUp" data-delay="0">
-                            <h2 class="project_tit">SK Telecom Be-Me Platform</h2>
-                            <div class="info_txt" lang="ko">
-                                Be-Me Platform은 SK Telecom의 개인화 서비스를 위한 Case study 및 상품 개발의 목적으로 만들어진 프로젝트로, ‘EGGO’ 라는 로봇 개인 비서가 빅데이터, 위치 서비스 기반으로 스페셜한 이벤트가 발생했을 때 Remind 해준다는 컨셉의 서비스 입니다. 저는 Be-Me Platform 프로젝트 중 '팝업 형태'로 서비스하는 'EGGO NOTI. CENTER' 앱의 전체 디자인과 특별한 이벤트를 자동으로 기록해 주는 'Special day' 앱의 일부를 디자인 했습니다. 
-                            </div>
-                        </div>
-                        <!-- //프로젝트 설명 -->
+						<div
+							class="box screenshot container"
+							data-animation="fadeInUp"
+							data-delay="0"
+						>
+							<img src="../images/sk_beme_04.jpg" alt="" />
+						</div>
 
-                        <!-- 프로젝트 정보 -->
-                        <dl class="project_info">
-                            <div data-animation="fadeInUp" data-delay="1">
-                                <dt>Role</dt>
-                                <dd>UI Design</dd>
-                                <dd>Brand Design</dd>
-                                <dd>Create Guideline</dd>
-                            </div>
-                            <div data-animation="fadeInUp" data-delay="3">
-                                <dt>Date</dt>
-                                <dd>2014. 04 - 2014. 07</dd>
-                            </div>
-                            <div data-animation="fadeInUp" data-delay="5">
-                                <dt>Participation</dt>
-                                <dd>50%</dd>
-                            </div>
-                        </dl>
-                        <!-- //프로젝트 정보 -->
+						<div
+							class="box screenshot container"
+							data-animation="fadeInUp"
+							data-delay="0"
+						>
+							<img src="../images/sk_beme_06.jpg" alt="" />
+						</div>
 
-                    </div>
-                </div>
-                <!-- //개요 -->
+						<div
+							class="box txt container"
+							data-animation="fadeInUp"
+							data-delay="0"
+						>
+							<h3>Special Day Design point</h3>
+							<p class="info_txt">
+								Special Day는 '당신의 특별한 하루를 기록해 준다' 라는 컨셉에
+								맞게 일기처럼 밝고 친근한 분위기의 앱으로, 평소와 다른 이벤트가
+								발생했을 때를 인지하여 위치 및 사진을 자동으로 기록한 다음 EGGO
+								NOTI. CENTER를 통해 알려주고, 유저가 추가로 활동 및 감정 아이콘,
+								이미지와 텍스트를 업로드하여 일기처럼 특별한 이벤트를 기억할 수
+								있게 해주는 서비스 입니다. 서브 페이지 일부와 로고, 활동 및 감정
+								이모티콘, Onboarding 페이지 등을 디자인 하였습니다.
+							</p>
+						</div>
+					</div>
+					<!-- //상세 -->
+				</section>
 
-                <!-- 상세 -->
-                <div class="detail">
-
-                    <div class="box screenshot container" data-animation="fadeInUp" data-delay="0">
-                        <img src="../images/sk_beme_02.jpg" alt="">
-                    </div>
-
-                    <div class="box txt container" data-animation="fadeInUp" data-delay="0">
-                        <h3>Overview</h3>
-                        <p class="info_txt" lang="ko">
-                            이 프로젝트를 통해 EGGO NOTI. CENTER와 Special day 두개의 앱을 병렬로 디자인하게 되었는데, 기획 및 로봇 캐릭터 디자인이 진행되는 동안 클라이언트의 방향성에 맞추어 Be-Me Platform의 메인이 되는 '팝업 형태'의 디자인을 제안 및 진행 하였고, EGGO NOTI. CENTER를 컨트롤 하는 앱의 기획이 진행되는 동안 'Special day' 앱의 서브 페이지 디자인 및 GUI Guideline을 작성 하고 로고를 디자인하는 등 약 5개월의 기간 내에 병렬로 다양한 디자인을 진행하였습니다. 개발을 위한 GUI Guideline을 작성 하였고, 서비스의 구체적인 이름이 정해진 이후에는 로고까지 맡아서 디자인 하였습니다.
-                        </p>
-                    </div>
-                    
-                    <div class="box screenshot container" data-animation="fadeInUp" data-delay="0">
-                        <img src="../images/sk_beme_05.jpg" alt="">
-                    </div>
-                    
-                    <div class="box txt container" data-animation="fadeInUp" data-delay="0">
-                        <h3>EGGO NOTI. CENTER Design point</h3>
-                        <p class="info_txt" lang="ko">
-                            EGGO NOTI. CENTER 는 '새로운 곳' 에 갔거나, '생일' 등의 이벤트가 발생했을 때 EGGO라는 로봇이 모바일 기본 화면에 팝업 형태로 나타나 이벤트를 알려주는 개인 비서 컨셉의 서비스로, Be-Me Platform에 모두 탑재되는 서비스이기 때문에 ‘기본적이고 범용적인’ 사용성에 포인트를 두고 컬러감을 최대한 배제하여 디자인 하였으며, 팝업이 여러 개 왔을 경우를 대비하여 팝업이 쌓이는 디테일을 표현 했습니다. 또 기본 알림 텍스트 외의 각 서비스에 맞는 감정 아이콘이나 사진 등을 삽입할 수 있는 공간을 고려하여 설계했습니다.
-                        </p>
-                    </div>
-
-                    <div class="box screenshot container" data-animation="fadeInUp" data-delay="0">
-                        <img src="../images/sk_beme_03.jpg" alt="">
-                    </div>
-
-                    <div class="box screenshot container" data-animation="fadeInUp" data-delay="0">
-                        <img src="../images/sk_beme_04.jpg" alt="">
-                    </div>
-                    
-                    <div class="box screenshot container" data-animation="fadeInUp" data-delay="0">
-                        <img src="../images/sk_beme_06.jpg" alt="">
-                    </div>
-
-                    <div class="box txt container" data-animation="fadeInUp" data-delay="0">
-                        <h3>Special Day Design point</h3>
-                        <p class="info_txt" lang="ko">
-                            Special Day는 '당신의 특별한 하루를 기록해 준다' 라는 컨셉에 맞게 일기처럼 밝고 친근한 분위기의 앱으로, 평소와 다른 이벤트가 발생했을 때를 인지하여 위치 및 사진을 자동으로 기록한 다음 EGGO NOTI. CENTER를 통해 알려주고, 유저가 추가로 활동 및 감정 아이콘, 이미지와 텍스트를 업로드하여 일기처럼 특별한 이벤트를 기억할 수 있게 해주는 서비스 입니다. 서브 페이지 일부와 로고, 활동 및 감정 이모티콘, Onboarding 페이지 등을 디자인 하였습니다.
-                        </p>
-                    </div>
-
-                </div>
-                <!-- //상세 -->
-
-            </section>
-
-            <div class="container">
-                <!-- <div class="project_list">
+				<div class="container">
+					<!-- <div class="project_list">
                     <ul>
                         <li><a href="../index.html">All</a></li>
                         <li><a href="../page/shoppingnttvapp.html">Shopping&T TV App</a></li>
@@ -199,52 +282,68 @@
                         <li><a href="../page/sooltong.html">Sooltong</a></li>
                     </ul>
                 </div> -->
-                <div class="project_link">
-                    <a href="kiaao.html" data-border>Next Project →</a>
-                </div>
-            </div>
+					<div class="project_link">
+						<a href="kiaao.html" data-border>Next Project →</a>
+					</div>
+				</div>
+			</div>
+			<!-- //메인 페이지 -->
 
-        </div>
-        <!-- //메인 페이지 -->
+			<!-- 푸터 -->
+			<footer>
+				<div class="container">
+					<div class="footer_wrap">
+						<ul class="sns">
+							<li>
+								<a
+									href="mailto:clairesoyoung.lee@gmail.com"
+									target="_blank"
+									data-border
+									>Mail</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://www.linkedin.com/in/clairesylee"
+									target="_blank"
+									data-border
+									>Linkedin</a
+								>
+							</li>
+							<li>
+								<a href="https://brunch.co.kr/@doer" target="_blank" data-border
+									>Brunch</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://www.pinterest.co.kr/clairesoyounglee/"
+									target="_blank"
+									data-border
+									>Pinterest</a
+								>
+							</li>
+						</ul>
+						<p class="copyright">
+							© Designed by
+							<a href="http://inclaire.com/" target="_blank" data-border
+								>Soyoung</a
+							>
+							&amp; Developed by
+							<a href="https://purymaster.github.io" target="_blank" data-border
+								>Koo</a
+							>
+						</p>
+					</div>
+				</div>
+			</footer>
+			<!-- //푸터 -->
+		</div>
 
-        <!-- 푸터 -->
-        <footer>
-            <div class="container">
-                <div class="footer_wrap">
-                    <ul class="sns">
-                        <li>
-                            <a href="mailto:clairesoyoung.lee@gmail.com" target="_blank" data-border>Mail</a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/clairesylee" target="_blank" data-border>Linkedin</a>
-                        </li>
-                        <li>
-                            <a href="https://brunch.co.kr/@doer" target="_blank" data-border>Brunch</a>
-                        </li>
-                        <li>
-                            <a href="https://www.pinterest.co.kr/clairesoyounglee/" target="_blank"
-                                data-border>Pinterest</a>
-                        </li>
-                    </ul>
-                    <p class="copyright">
-                        © Designed by
-                        <a href="http://inclaire.com/" target="_blank" data-border>Soyoung</a>
-                        &amp; Developed by
-                        <a href="https://purymaster.github.io" target="_blank" data-border>Koo</a>
-                    </p>
-                </div>
-            </div>
-        </footer>
-        <!-- //푸터 -->
-
-    </div>
-
-    <!-- TOP 버튼 -->
-    <div class="move_top">
-		<button type="button">Move to page top</button>
-	</div>
-    <!-- //TOP 버튼 -->
-    
-</body>
-
+		<!-- TOP 버튼 -->
+		<div class="move_top">
+			<button type="button">Move to page top</button>
+		</div>
+		<!-- //TOP 버튼 -->
+	</body>
 </html>

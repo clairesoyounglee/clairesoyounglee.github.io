@@ -1,176 +1,239 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="Author" content="Lee So Young" />
+		<meta name="Keywords" content="UIdesigner,UXdesigner" />
+		<meta name="Description" content="Lee So Young Portfolio" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Leesoyoung" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="robots" content="noindex" />
+		<title>Lee So Young</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Author" content="Lee So Young">
-    <meta name="Keywords" content="UIdesigner,UXdesigner">
-    <meta name="Description" content="Lee So Young Portfolio">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Leesoyoung">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="robots" content="noindex">
-    <title>Lee So Young</title>
+		<script src="../js/jquery.js"></script>
+		<script src="../js/common.js"></script>
 
-    <script src="../js/jquery.js"></script>
-    <script src="../js/common.js"></script>
-    
-    <link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../css/common.css" />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135251782-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-135251782-1');
-    </script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=UA-135251782-1"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+			gtag("config", "UA-135251782-1");
+		</script>
+	</head>
 
-</head>
+	<body>
+		<div class="wrap">
+			<!-- 헤더 -->
+			<header>
+				<div class="container">
+					<h1>
+						<a href="../index.html">
+							<img src="../images/ico/symbol.png" alt="Lee So Young" />
+						</a>
+					</h1>
 
-<body>
-    <div class="wrap">
+					<button class="open mobile" type="button">
+						<span></span>
+						<span></span>
+						<span></span>
+						Open mobile menu
+					</button>
 
-        <!-- 헤더 -->
-        <header>
-            <div class="container">
-                <h1>
-                    <a href="../index.html">
-                        <img src="../images/ico/symbol.png" alt="Lee So Young">
-                    </a>
-                </h1>
+					<!-- 네비게이션 -->
+					<nav>
+						<div class="nav_wrap">
+							<div class="container">
+								<ul class="menu">
+									<li><a href="../index.html" data-border>Work</a></li>
+									<li><a href="../side.html" data-border>Side</a></li>
+									<li><a href="../about.html" data-border>About</a></li>
+								</ul>
+							</div>
+							<div class="misc">
+								<ul class="sns mobile">
+									<li>
+										<a
+											href="mailto:clairesoyoung.lee@gmail.com"
+											target="_blank"
+											data-border
+											>Mail</a
+										>
+									</li>
+									<li>
+										<a
+											href="https://www.linkedin.com/in/clairesylee"
+											target="_blank"
+											data-border
+											>Linkedin</a
+										>
+									</li>
+									<li>
+										<a
+											href="https://brunch.co.kr/@doer"
+											target="_blank"
+											data-border
+											>Brunch</a
+										>
+									</li>
+									<li>
+										<a
+											href="https://www.pinterest.co.kr/clairesoyounglee/"
+											target="_blank"
+											data-border
+											>Pinterest</a
+										>
+									</li>
+								</ul>
+								<p class="copyright mobile">
+									© Designed by
+									<a href="http://inclaire.com/" target="_blank" data-border
+										>Soyoung</a
+									>
+									&amp; Developed by
+									<a
+										href="https://purymaster.github.io"
+										target="_blank"
+										data-border
+										>Koo</a
+									>
+								</p>
+							</div>
+						</div>
+					</nav>
+					<!-- //네비게이션 -->
+				</div>
+			</header>
+			<!-- //헤더 -->
 
-                <button class="open mobile" type="button">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    Open mobile menu
-                </button>
+			<!-- 메인 페이지 -->
+			<div class="content sub">
+				<section>
+					<!-- 개요 -->
+					<div class="info">
+						<div
+							class="box screenshot"
+							data-animation="fadeInUp"
+							data-delay="0"
+						>
+							<img src="../images/samsung_seasonal_01.gif" alt="" />
+						</div>
 
-                <!-- 네비게이션 -->
-                <nav>
-                    <div class="nav_wrap">
-                        <div class="container">
-                            <ul class="menu">
-                                <li><a href="../index.html" data-border>Work</a></li>
-                                <li><a href="../side.html" data-border>Side</a></li>
-                                <li><a href="../about.html" data-border>About</a></li>
-                            </ul>
-                        </div>
-                        <div class="misc">
-                            <ul class="sns mobile">
-                                <li>
-                                    <a href="mailto:clairesoyoung.lee@gmail.com" target="_blank" data-border>Mail</a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/in/clairesylee" target="_blank"
-                                        data-border>Linkedin</a>
-                                </li>
-                                <li>
-                                    <a href="https://brunch.co.kr/@doer" target="_blank" data-border>Brunch</a>
-                                </li>
-                                <li>
-                                    <a href="https://www.pinterest.co.kr/clairesoyounglee/" target="_blank"
-                                        data-border>Pinterest</a>
-                                </li>
-                            </ul>
-                            <p class="copyright mobile">
-                                © Designed by
-                                <a href="http://inclaire.com/" target="_blank" data-border>Soyoung</a>
-                                &amp; Developed by
-                                <a href="https://purymaster.github.io" target="_blank" data-border>Koo</a>
-                            </p>
-                        </div>
-                    </div>
-                </nav>
-                <!-- //네비게이션 -->
+						<div class="box txt container">
+							<!-- 프로젝트 설명 -->
+							<div data-animation="fadeInUp" data-delay="0">
+								<h2 class="project_tit">Samsung.com Seasonal Promotion</h2>
+								<div class="info_txt">
+									삼성닷컴 메인 페이지의 시즈널 프로모션 입니다. 제품 외
+									이미지가 주어지지 않은 상황에서 크리스마스와 연말, 새해 등의
+									분위기를 표현해야 하는 미션과 선물하기 좋은 휴대 가전을
+									노출하여 갖고 싶게끔 하는 목표가 있었기 때문에 주변 오브젝트를
+									이용하여 무드를 만들었으며 빛과 그림자, 오브젝트의 비율을
+									정확히 맞춰 마치 사진같은 하이 퀄리티 룩에 집중하여 잡지
+									사진처럼 이목을 끄는 룩으로 전개하였으나 메인인 영국 페이지의
+									이슈로 게재 전 기존의 삼성에서 게재했던 일반형 디자인으로
+									바뀌어 진행하게 되었습니다.
+								</div>
+							</div>
+							<!-- //프로젝트 설명 -->
 
-            </div>
-        </header>
-        <!-- //헤더 -->
+							<!-- 프로젝트 정보 -->
+							<dl class="project_info">
+								<div data-animation="fadeInUp" data-delay="1">
+									<dt>Role</dt>
+									<dd>Ideation</dd>
+									<dd>Visual Design</dd>
+									<dd>Create Guideline</dd>
+								</div>
+								<div data-animation="fadeInUp" data-delay="3">
+									<dt>Date</dt>
+									<dd>2015. 11</dd>
+								</div>
+								<div data-animation="fadeInUp" data-delay="5">
+									<dt>Participation</dt>
+									<dd>100%</dd>
+								</div>
+							</dl>
+							<!-- //프로젝트 정보 -->
+						</div>
+					</div>
+					<!-- //개요 -->
 
-        <!-- 메인 페이지 -->
-        <div class="content sub">
-            <section>
+					<!-- 상세 -->
+					<div class="detail">
+						<div
+							class="box screenshot container"
+							data-animation="fadeInUp"
+							data-delay="0"
+						>
+							<img src="../images/samsung_seasonal_04.jpg" alt="" />
+						</div>
 
-                <!-- 개요 -->
-                <div class="info">
+						<div
+							class="box screenshot container"
+							data-animation="fadeInUp"
+							data-delay="0"
+						>
+							<img src="../images/samsung_seasonal_03.jpg" alt="" />
+						</div>
 
-                    <div class="box screenshot" data-animation="fadeInUp" data-delay="0">
-                        <img src="../images/samsung_seasonal_01.gif" alt="">
-                    </div>
+						<div
+							class="box txt container"
+							data-animation="fadeInUp"
+							data-delay="0"
+						>
+							<h3>Concept</h3>
+							<p class="info_txt">
+								산타나 트리, 해돋이 등의 흔한 소재 대신 크리스마스, 새해, 겨울을
+								자연스럽게 연상시켜주는 오브젝트와 삼성의 제품을 함께 배치하여
+								삼성 제품과 연말 연시를 함께하는 분위기를 컨셉으로 진행
+								하였으며, 선물하기 좋은 스마트폰, 헤드폰, 기어 및 악세사리 등의
+								제품군을 선택한 후 제안하여 '연말 연시', '선물' 등의 컨셉과
+								일치하게 진행될 수 있도록 노력하였습니다.
+							</p>
+						</div>
 
-                    <div class="box txt container">
+						<div
+							class="box screenshot container"
+							data-animation="fadeInUp"
+							data-delay="0"
+						>
+							<img src="../images/samsung_seasonal_02.gif" alt="" />
+						</div>
 
-                        <!-- 프로젝트 설명 -->
-                        <div data-animation="fadeInUp" data-delay="0">
-                            <h2 class="project_tit">Samsung.com Seasonal Promotion</h2>
-                            <div class="info_txt" lang="ko">
-                                삼성닷컴 메인 페이지의 시즈널 프로모션 입니다. 제품 외 이미지가 주어지지 않은 상황에서 크리스마스와 연말, 새해 등의 분위기를 표현해야 하는 미션과 선물하기 좋은 휴대 가전을 노출하여 갖고 싶게끔 하는 목표가 있었기 때문에 주변 오브젝트를 이용하여 무드를 만들었으며 빛과 그림자, 오브젝트의 비율을 정확히 맞춰 마치 사진같은 하이 퀄리티 룩에 집중하여 잡지 사진처럼 이목을 끄는 룩으로 전개하였으나 메인인 영국 페이지의 이슈로 게재 전 기존의 삼성에서 게재했던 일반형 디자인으로 바뀌어 진행하게 되었습니다.
-                            </div>
-                        </div>
-                        <!-- //프로젝트 설명 -->
+						<div
+							class="box txt container"
+							data-animation="fadeInUp"
+							data-delay="0"
+						>
+							<h3>Design point</h3>
+							<p class="info_txt">
+								삼성의 실제 제품과 함께 배치하기 때문에 빛과 그림자, 오브젝트의
+								비율을 정확히 맞춰 실제 사진처럼 표현하려고 노력하였습니다.
+								크리스마스 컨셉의 배너 이미지는 삼성 제품을 더욱 돋보일 수
+								있게끔 컬러나 디테일이 튀는 오브젝트는 배치하지 않았으며,
+								크리스마스의 느낌이 나는 레드컬러의 제품을 자연스럽게
+								배치하였습니다.새해 컨셉의 배너의 경우 삼성의 브랜드 컬러와
+								어우러지는 오브젝트를 사용하여 New year의 감성이 드러날 수
+								있도록 디자인 하였습니다.
+							</p>
+						</div>
+					</div>
+					<!-- //상세 -->
+				</section>
 
-                        <!-- 프로젝트 정보 -->
-                        <dl class="project_info">
-                            <div data-animation="fadeInUp" data-delay="1">
-                                <dt>Role</dt>
-                                <dd>Ideation</dd>
-                                <dd>Visual Design</dd>
-                                <dd>Create Guideline</dd>
-                            </div>
-                            <div data-animation="fadeInUp" data-delay="3">
-                                <dt>Date</dt>
-                                <dd>2015. 11</dd>
-                            </div>
-                            <div data-animation="fadeInUp" data-delay="5">
-                                <dt>Participation</dt>
-                                <dd>100%</dd>
-                            </div>
-                        </dl>
-                        <!-- //프로젝트 정보 -->
-
-                    </div>
-                </div>
-                <!-- //개요 -->
-
-                <!-- 상세 -->
-                <div class="detail">
-
-                    <div class="box screenshot container" data-animation="fadeInUp" data-delay="0">
-                        <img src="../images/samsung_seasonal_04.jpg" alt="">
-                    </div>
-
-                    <div class="box screenshot container" data-animation="fadeInUp" data-delay="0">
-                        <img src="../images/samsung_seasonal_03.jpg" alt="">
-                    </div>
-
-                    <div class="box txt container" data-animation="fadeInUp" data-delay="0">
-                        <h3>Concept</h3>
-                        <p class="info_txt" lang="ko">
-                            산타나 트리, 해돋이 등의 흔한 소재 대신 크리스마스, 새해, 겨울을 자연스럽게 연상시켜주는 오브젝트와 삼성의 제품을 함께 배치하여 삼성 제품과 연말 연시를 함께하는 분위기를 컨셉으로 진행 하였으며, 선물하기 좋은 스마트폰, 헤드폰, 기어 및 악세사리 등의 제품군을 선택한 후 제안하여 '연말 연시', '선물' 등의 컨셉과 일치하게 진행될 수 있도록 노력하였습니다.
-                        </p>
-                    </div>
-
-                    <div class="box screenshot container" data-animation="fadeInUp" data-delay="0">
-                        <img src="../images/samsung_seasonal_02.gif" alt="">
-                    </div>
-
-                    <div class="box txt container" data-animation="fadeInUp" data-delay="0">
-                        <h3>Design point</h3>
-                        <p class="info_txt" lang="ko">
-                            삼성의 실제 제품과 함께 배치하기 때문에 빛과 그림자, 오브젝트의 비율을 정확히 맞춰 실제 사진처럼 표현하려고 노력하였습니다. 크리스마스 컨셉의 배너 이미지는 삼성 제품을 더욱 돋보일 수 있게끔 컬러나 디테일이 튀는 오브젝트는 배치하지 않았으며, 크리스마스의 느낌이 나는 레드컬러의 제품을 자연스럽게 배치하였습니다.새해 컨셉의 배너의 경우 삼성의 브랜드 컬러와 어우러지는 오브젝트를 사용하여 New year의 감성이 드러날 수 있도록 디자인 하였습니다. 
-                        </p>
-                    </div>
-
-                </div>
-                <!-- //상세 -->
-
-            </section>
-
-            <div class="container">
-                <!-- <div class="project_list">
+				<div class="container">
+					<!-- <div class="project_list">
                     <ul>
                         <li><a href="../index.html">All</a></li>
                         <li><a href="../page/shoppingnttvapp.html">Shopping&T TV App</a></li>
@@ -183,52 +246,68 @@
                         <li><a href="../page/sooltong.html">Sooltong</a></li>
                     </ul>
                 </div> -->
-                <div class="project_link">
-                    <a href="sntpc.html" data-border>Next Project →</a>
-                </div>
-            </div>
+					<div class="project_link">
+						<a href="sntpc.html" data-border>Next Project →</a>
+					</div>
+				</div>
+			</div>
+			<!-- //메인 페이지 -->
 
-        </div>
-        <!-- //메인 페이지 -->
+			<!-- 푸터 -->
+			<footer>
+				<div class="container">
+					<div class="footer_wrap">
+						<ul class="sns">
+							<li>
+								<a
+									href="mailto:clairesoyoung.lee@gmail.com"
+									target="_blank"
+									data-border
+									>Mail</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://www.linkedin.com/in/clairesylee"
+									target="_blank"
+									data-border
+									>Linkedin</a
+								>
+							</li>
+							<li>
+								<a href="https://brunch.co.kr/@doer" target="_blank" data-border
+									>Brunch</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://www.pinterest.co.kr/clairesoyounglee/"
+									target="_blank"
+									data-border
+									>Pinterest</a
+								>
+							</li>
+						</ul>
+						<p class="copyright">
+							© Designed by
+							<a href="http://inclaire.com/" target="_blank" data-border
+								>Soyoung</a
+							>
+							&amp; Developed by
+							<a href="https://purymaster.github.io" target="_blank" data-border
+								>Koo</a
+							>
+						</p>
+					</div>
+				</div>
+			</footer>
+			<!-- //푸터 -->
+		</div>
 
-        <!-- 푸터 -->
-        <footer>
-            <div class="container">
-                <div class="footer_wrap">
-                    <ul class="sns">
-                        <li>
-                            <a href="mailto:clairesoyoung.lee@gmail.com" target="_blank" data-border>Mail</a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/clairesylee" target="_blank" data-border>Linkedin</a>
-                        </li>
-                        <li>
-                            <a href="https://brunch.co.kr/@doer" target="_blank" data-border>Brunch</a>
-                        </li>
-                        <li>
-                            <a href="https://www.pinterest.co.kr/clairesoyounglee/" target="_blank"
-                                data-border>Pinterest</a>
-                        </li>
-                    </ul>
-                    <p class="copyright">
-                        © Designed by
-                        <a href="http://inclaire.com/" target="_blank" data-border>Soyoung</a>
-                        &amp; Developed by
-                        <a href="https://purymaster.github.io" target="_blank" data-border>Koo</a>
-                    </p>
-                </div>
-            </div>
-        </footer>
-        <!-- //푸터 -->
-
-    </div>
-
-    <!-- TOP 버튼 -->
-    <div class="move_top">
-		<button type="button">Move to page top</button>
-	</div>
-    <!-- //TOP 버튼 -->
-    
-</body>
-
+		<!-- TOP 버튼 -->
+		<div class="move_top">
+			<button type="button">Move to page top</button>
+		</div>
+		<!-- //TOP 버튼 -->
+	</body>
 </html>

@@ -1,190 +1,241 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="Author" content="Lee So Young" />
+		<meta name="Keywords" content="UIdesigner,UXdesigner" />
+		<meta name="Description" content="Lee So Young Portfolio" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Leesoyoung" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="robots" content="noindex" />
+		<title>Lee So Young</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Author" content="Lee So Young">
-    <meta name="Keywords" content="UIdesigner,UXdesigner">
-    <meta name="Description" content="Lee So Young Portfolio">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Leesoyoung">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="robots" content="noindex">
-    <title>Lee So Young</title>
+		<script src="../js/jquery.js"></script>
+		<script src="../js/common.js"></script>
 
-    <script src="../js/jquery.js"></script>
-    <script src="../js/common.js"></script>
-    
-    <link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../css/common.css" />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135251782-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-135251782-1');
-    </script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=UA-135251782-1"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+			gtag("config", "UA-135251782-1");
+		</script>
+	</head>
 
-</head>
+	<body>
+		<div class="wrap">
+			<!-- 헤더 -->
+			<header>
+				<div class="container">
+					<h1>
+						<a href="../index.html">
+							<img src="../images/ico/symbol.png" alt="Lee So Young" />
+						</a>
+					</h1>
 
-<body>
-    <div class="wrap">
+					<button class="open mobile" type="button">
+						<span></span>
+						<span></span>
+						<span></span>
+						Open mobile menu
+					</button>
 
-        <!-- 헤더 -->
-        <header>
-            <div class="container">
-                <h1>
-                    <a href="../index.html">
-                        <img src="../images/ico/symbol.png" alt="Lee So Young">
-                    </a>
-                </h1>
+					<!-- 네비게이션 -->
+					<nav>
+						<div class="nav_wrap">
+							<div class="container">
+								<ul class="menu">
+									<li><a href="../index.html" data-border>Work</a></li>
+									<li><a href="../side.html" data-border>Side</a></li>
+									<li><a href="../about.html" data-border>About</a></li>
+								</ul>
+							</div>
+							<div class="misc">
+								<ul class="sns mobile">
+									<li>
+										<a
+											href="mailto:clairesoyoung.lee@gmail.com"
+											target="_blank"
+											data-border
+											>Mail</a
+										>
+									</li>
+									<li>
+										<a
+											href="https://www.linkedin.com/in/clairesylee"
+											target="_blank"
+											data-border
+											>Linkedin</a
+										>
+									</li>
+									<li>
+										<a
+											href="https://brunch.co.kr/@doer"
+											target="_blank"
+											data-border
+											>Brunch</a
+										>
+									</li>
+									<li>
+										<a
+											href="https://www.pinterest.co.kr/clairesoyounglee/"
+											target="_blank"
+											data-border
+											>Pinterest</a
+										>
+									</li>
+								</ul>
+								<p class="copyright mobile">
+									© Designed by
+									<a href="http://inclaire.com/" target="_blank" data-border
+										>Soyoung</a
+									>
+									&amp; Developed by
+									<a
+										href="https://purymaster.github.io"
+										target="_blank"
+										data-border
+										>Koo</a
+									>
+								</p>
+							</div>
+						</div>
+					</nav>
+					<!-- //네비게이션 -->
+				</div>
+			</header>
+			<!-- //헤더 -->
 
-                <button class="open mobile" type="button">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    Open mobile menu
-                </button>
+			<!-- 메인 페이지 -->
+			<div class="content sub">
+				<section>
+					<!-- 개요 -->
+					<div class="info">
+						<div
+							class="box screenshot"
+							data-animation="fadeInUp"
+							data-delay="0"
+						>
+							<img src="../images/sooltong_01.jpg" alt="" />
+						</div>
 
-                <!-- 네비게이션 -->
-                <nav>
-                    <div class="nav_wrap">
-                        <div class="container">
-                            <ul class="menu">
-                                <li><a href="../index.html" data-border>Work</a></li>
-                                <li><a href="../side.html" data-border>Side</a></li>
-                                <li><a href="../about.html" data-border>About</a></li>
-                            </ul>
-                        </div>
-                        <div class="misc">
-                            <ul class="sns mobile">
-                                <li>
-                                    <a href="mailto:clairesoyoung.lee@gmail.com" target="_blank" data-border>Mail</a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/in/clairesylee" target="_blank"
-                                        data-border>Linkedin</a>
-                                </li>
-                                <li>
-                                    <a href="https://brunch.co.kr/@doer" target="_blank" data-border>Brunch</a>
-                                </li>
-                                <li>
-                                    <a href="https://www.pinterest.co.kr/clairesoyounglee/" target="_blank"
-                                        data-border>Pinterest</a>
-                                </li>
-                            </ul>
-                            <p class="copyright mobile">
-                                © Designed by
-                                <a href="http://inclaire.com/" target="_blank" data-border>Soyoung</a>
-                                &amp; Developed by
-                                <a href="https://purymaster.github.io" target="_blank" data-border>Koo</a>
-                            </p>
-                        </div>
-                    </div>
-                </nav>
-                <!-- //네비게이션 -->
+						<div class="box txt container">
+							<!-- 프로젝트 설명 -->
+							<div data-animation="fadeInUp" data-delay="0">
+								<h2 class="project_tit">
+									Sooltong Calligraphy Specialist Exhibition
+								</h2>
+								<div class="info_txt">
+									'한글 삶을 밝히다' 전시는, 강병인 작가님께 1년동안 캘리그라피
+									교육을 받은 전문 작가반의 수료 전시입니다. 본인이 어떤 정치적
+									견해를 가지고 있는지와 관계 없이, 국정 농단으로 마음 아프고
+									힘들었던 시기를 보낸 관객이 글에서 위로를 받도록 희망적인
+									메세지를 담아 작품을 만들었습니다. 신분에 구애받지 않고 모든
+									국민이 글을 쓸 수 있도록 한 한글 창제 정신이 절실히 필요했던
+									시기였기 때문에 모든 작가들이 한뜻으로 한글의 의미를 되새기는
+									내용을 전시했습니다. 2016년 12월 14일부터 12월 18일까지 진행된
+									전시입니다.
+								</div>
+							</div>
+							<!-- //프로젝트 설명 -->
 
-            </div>
-        </header>
-        <!-- //헤더 -->
+							<!-- 프로젝트 정보 -->
+							<dl class="project_info">
+								<div data-animation="fadeInUp" data-delay="1">
+									<dt>Role</dt>
+									<dd>Calligraphy</dd>
+								</div>
+								<div data-animation="fadeInUp" data-delay="3">
+									<dt>Date</dt>
+									<dd>2016. 12</dd>
+								</div>
+								<div data-animation="fadeInUp" data-delay="5">
+									<dt>Participation</dt>
+									<dd>100%</dd>
+								</div>
+							</dl>
+							<!-- //프로젝트 정보 -->
+						</div>
+					</div>
+					<!-- //개요 -->
 
-        <!-- 메인 페이지 -->
-        <div class="content sub">
-            <section>
+					<!-- 상세 -->
+					<div class="detail">
+						<div
+							class="box txt container"
+							data-animation="fadeInUp"
+							data-delay="0"
+						>
+							<h3>Overview</h3>
+							<p class="info_txt">
+								진실을 몰라 속수무책으로 당했던 국민이 한글로 인해 많은 것을
+								알게 된 것처럼, 칠흑같이 어두운 곳에서 밝게 빛나는 힘을 표현한
+								제목을 굵고 강한 힘이 느껴지게 썼습니다. 그리고 그 안에 보이는
+								글씨에서 마음속에만 품고 있던 메세지를 말하는 컨셉으로 작품을
+								만들었습니다. 굵은 붓으로 글씨를 쓰고 그 안에 작은 글씨를
+								표현해야 했기 때문에, 후 작업을 통해 글씨를 믹스하는 방식으로
+								진행하였습니다. 메인 작품 외에도 손글씨 만으로 이루어진
+								작품에서도 희망을 기다리는 메세지를 담은 시를 선택했으며, 전시
+								기간이 겨울이었기 때문에 추웠던 날들을 보내고 따스한 봄날을
+								기다리는 마음을 담아 손글씨 작품을 진행하였습니다.
+							</p>
+						</div>
 
-                <!-- 개요 -->
-                <div class="info">
+						<div
+							class="box screenshot container"
+							data-animation="fadeInUp"
+							data-delay="0"
+						>
+							<img src="../images/sooltong_02.jpg" alt="" />
+						</div>
 
-                    <div class="box screenshot" data-animation="fadeInUp" data-delay="0">
-                        <img src="../images/sooltong_01.jpg" alt="">
-                    </div>
+						<div
+							class="box screenshot container"
+							data-animation="fadeInUp"
+							data-delay="0"
+						>
+							<img src="../images/sooltong_03.jpg" alt="" />
+						</div>
 
-                    <div class="box txt container">
+						<div
+							class="box screenshot container"
+							data-animation="fadeInUp"
+							data-delay="0"
+						>
+							<img src="../images/sooltong_04.jpg" alt="" />
+						</div>
 
-                        <!-- 프로젝트 설명 -->
-                        <div data-animation="fadeInUp" data-delay="0">
-                            <h2 class="project_tit">Sooltong Calligraphy Specialist Exhibition</h2>
-                            <div class="info_txt" lang="ko">
-                                '한글 삶을 밝히다' 전시는, 강병인 작가님께 1년동안 캘리그라피 교육을 받은 전문 작가반의 수료 전시입니다. 본인이 어떤 정치적 견해를 가지고
-                                있는지와 관계
-                                없이, 국정 농단으로 마음 아프고 힘들었던 시기를 보낸 관객이 글에서 위로를 받도록 희망적인 메세지를 담아 작품을 만들었습니다. 신분에 구애받지
-                                않고
-                                모든
-                                국민이 글을 쓸 수 있도록 한 한글 창제 정신이 절실히 필요했던 시기였기 때문에 모든 작가들이 한뜻으로 한글의 의미를 되새기는 내용을
-                                전시했습니다.
-                                2016년
-                                12월 14일부터 12월 18일까지 진행된 전시입니다.
-                            </div>
-                        </div>
-                        <!-- //프로젝트 설명 -->
+						<div
+							class="box screenshot container"
+							data-animation="fadeInUp"
+							data-delay="0"
+						>
+							<img src="../images/sooltong_05.jpg" alt="" />
+						</div>
 
-                        <!-- 프로젝트 정보 -->
-                        <dl class="project_info">
-                            <div data-animation="fadeInUp" data-delay="1">
-                                <dt>Role</dt>
-                                <dd>Calligraphy</dd>
-                            </div>
-                            <div data-animation="fadeInUp" data-delay="3">
-                                <dt>Date</dt>
-                                <dd>2016. 12</dd>
-                            </div>
-                            <div data-animation="fadeInUp" data-delay="5">
-                                <dt>Participation</dt>
-                                <dd>100%</dd>
-                            </div>
-                        </dl>
-                        <!-- //프로젝트 정보 -->
+						<div
+							class="box screenshot container"
+							data-animation="fadeInUp"
+							data-delay="0"
+						>
+							<img src="../images/sooltong_06.jpg" alt="" />
+						</div>
+					</div>
+					<!-- //상세 -->
+				</section>
 
-                    </div>
-                </div>
-                <!-- //개요 -->
-
-                <!-- 상세 -->
-                <div class="detail">
-
-                    <div class="box txt container" data-animation="fadeInUp" data-delay="0">
-                        <h3>Overview</h3>
-                        <p class="info_txt" lang="ko">
-                            진실을 몰라 속수무책으로 당했던 국민이 한글로 인해 많은 것을 알게 된 것처럼, 칠흑같이 어두운 곳에서 밝게 빛나는 힘을 표현한 제목을 굵고 강한 힘이
-                            느껴지게
-                            썼습니다. 그리고 그 안에 보이는 글씨에서 마음속에만 품고 있던 메세지를 말하는 컨셉으로 작품을 만들었습니다. 굵은 붓으로 글씨를 쓰고 그 안에 작은
-                            글씨를
-                            표현해야
-                            했기 때문에, 후 작업을 통해 글씨를 믹스하는 방식으로 진행하였습니다. 메인 작품 외에도 손글씨 만으로 이루어진 작품에서도 희망을 기다리는 메세지를
-                            담은 시를
-                            선택했으며, 전시 기간이 겨울이었기 때문에 추웠던 날들을 보내고 따스한 봄날을 기다리는 마음을 담아 손글씨 작품을 진행하였습니다.
-                        </p>
-                    </div>
-
-                    <div class="box screenshot container" data-animation="fadeInUp" data-delay="0">
-                        <img src="../images/sooltong_02.jpg" alt="">
-                    </div>
-
-                    <div class="box screenshot container" data-animation="fadeInUp" data-delay="0">
-                        <img src="../images/sooltong_03.jpg" alt="">
-                    </div>
-
-                    <div class="box screenshot container" data-animation="fadeInUp" data-delay="0">
-                        <img src="../images/sooltong_04.jpg" alt="">
-                    </div>
-
-                    <div class="box screenshot container" data-animation="fadeInUp" data-delay="0">
-                        <img src="../images/sooltong_05.jpg" alt="">
-                    </div>
-
-                    <div class="box screenshot container" data-animation="fadeInUp" data-delay="0">
-                        <img src="../images/sooltong_06.jpg" alt="">
-                    </div>
-
-                </div>
-                <!-- //상세 -->
-
-            </section>
-
-            <div class="container">
-                <!-- <div class="project_list">
+				<div class="container">
+					<!-- <div class="project_list">
                     <ul>
                         <li><a href="../index.html">All</a></li>
                         <li><a href="../page/shoppingnttvapp.html">Shopping&T TV App</a></li>
@@ -197,52 +248,68 @@
                         <li class="on"><a href="../page/sooltong.html">Sooltong</a></li>
                     </ul>
                 </div> -->
-                <!-- <div class="project_link margin">
+					<!-- <div class="project_link margin">
                     <a href="sejong.html" data-border>Next Project →</a>
                 </div> -->
-            </div>
+				</div>
+			</div>
+			<!-- //메인 페이지 -->
 
-        </div>
-        <!-- //메인 페이지 -->
+			<!-- 푸터 -->
+			<footer>
+				<div class="container">
+					<div class="footer_wrap">
+						<ul class="sns">
+							<li>
+								<a
+									href="mailto:clairesoyoung.lee@gmail.com"
+									target="_blank"
+									data-border
+									>Mail</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://www.linkedin.com/in/clairesylee"
+									target="_blank"
+									data-border
+									>Linkedin</a
+								>
+							</li>
+							<li>
+								<a href="https://brunch.co.kr/@doer" target="_blank" data-border
+									>Brunch</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://www.pinterest.co.kr/clairesoyounglee/"
+									target="_blank"
+									data-border
+									>Pinterest</a
+								>
+							</li>
+						</ul>
+						<p class="copyright">
+							© Designed by
+							<a href="http://inclaire.com/" target="_blank" data-border
+								>Soyoung</a
+							>
+							&amp; Developed by
+							<a href="https://purymaster.github.io" target="_blank" data-border
+								>Koo</a
+							>
+						</p>
+					</div>
+				</div>
+			</footer>
+			<!-- //푸터 -->
+		</div>
 
-        <!-- 푸터 -->
-        <footer>
-            <div class="container">
-                <div class="footer_wrap">
-                    <ul class="sns">
-                        <li>
-                            <a href="mailto:clairesoyoung.lee@gmail.com" target="_blank" data-border>Mail</a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/clairesylee" target="_blank" data-border>Linkedin</a>
-                        </li>
-                        <li>
-                            <a href="https://brunch.co.kr/@doer" target="_blank" data-border>Brunch</a>
-                        </li>
-                        <li>
-                            <a href="https://www.pinterest.co.kr/clairesoyounglee/" target="_blank"
-                                data-border>Pinterest</a>
-                        </li>
-                    </ul>
-                    <p class="copyright">
-                        © Designed by
-                        <a href="http://inclaire.com/" target="_blank" data-border>Soyoung</a>
-                        &amp; Developed by
-                        <a href="https://purymaster.github.io" target="_blank" data-border>Koo</a>
-                    </p>
-                </div>
-            </div>
-        </footer>
-        <!-- //푸터 -->
-
-    </div>
-
-    <!-- TOP 버튼 -->
-    <div class="move_top">
-        <button type="button">Move to page top</button>
-    </div>
-    <!-- //TOP 버튼 -->
-
-</body>
-
+		<!-- TOP 버튼 -->
+		<div class="move_top">
+			<button type="button">Move to page top</button>
+		</div>
+		<!-- //TOP 버튼 -->
+	</body>
 </html>
